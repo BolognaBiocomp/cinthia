@@ -6,43 +6,37 @@ import string
 import sets
 import math
 import re
-import maxss # WARNING ! This must be in also in other places 
+from . import maxss # WARNING ! This must be in also in other places
 #sys.path.append('/home/savojard/LocPipeline/CINTHIA-MOD/hmm')
-import hmm.tr_obj as tr_obj
-import hmm.HMM_IO as HMM_IO
-import hmm.algo_HMM as algo_HMM
-import config as cinthiaconfig
+from .hmm import tr_obj
+import .hmm import HMM_IO
+import .hmm import algo_HMM
+import . import config as cfg
 
-def runCRF(model, inpf, outf, postf, decoding, window):
+def runCRF(model, profile, we):
+  crfdat = we.createFile("crf.", ".dat")
+  cdofs=open(crfdat,'w')
+  for i in range(profile.shape[0]):
+      for j in range(profile.shape[1]):
+          cdofs.write("%f " % profile[i][j])
+      cdofs.write("l\n")
+  cdofs.write("\n")
+  cdofs.close()
+  crfpred = we.createFile("crf.", ".pred")
+  crfplabel = we.createFile("crf.",".plabel")
 
-  """
-  crfplabel = tempfile.NamedTemporaryFile()
-    crfplabelname = crfplabel.name
-    crfplabel.close
-    crfpstate = tempfile.NamedTemporaryFile()
-    crfpstatename = crfpstate.name
-    crfpstate.close
-    # Run prediction to get P(State)
-    sp.check_call(['/home/savojard/BUSCA/tools/tppred3/tppred3/tools/biocrf',
-                   '-test', '-w', '5', '-m',
-                   crfmodel, '-a', '1', '-d',
-                   'posterior-viterbi-max', '-q',
-                   crfpstatename, '-o', crfpredname, crfdatname], stderr = open("/dev/null", 'w'), stdout = open("/dev/null", 'w'))
-    state_prob = [float(line.split()[45]) for line in open(crfpstatename+"_0").readlines()]
-  """
   subprocess.call([cinthiaconfig.BIOCRF, '-test',
                    '-m', model,
-                   '-o', outf,
-                   '-d', decoding,
-                   '-q', postf,
-                   '-w', str(window),
-                   '-a', '1', inpf],
+                   '-o', crfpred,
+                   '-d', cfg.CRF_DECONDING,
+                   '-q', crfplabel,
+                   '-w', str(cfg.CRF_WINDOW),
+                   '-a', '1', crfdat],
                    stdout=open('/dev/null', 'w'),
                    stderr=open('/dev/null', 'w'))
-  observation = ''.join([x.split()[0] for x in open(outf).readlines()[:-1]])
-  prediction  = ''.join([x.split()[1] for x in open(outf).readlines()[:-1]])
-  probs       = [float(line.split()[1]) for line in open(postf+"_0").readlines()]
-  return observation, prediction, probs
+  prediction  = ''.join([x.split()[1] for x in open(crfpred).readlines()[:-1]])
+  probs       = [float(line.split()[1]) for line in open(crfplabel+"_0").readlines()]
+  return prediction, probs
 
 def runHMM(model, inpf):
   profile = open(inpf).readlines()
@@ -144,7 +138,7 @@ def writeConsensus(tmSeg,pLen,topSeg,topSum,mVote,tSymb,outf):
     if tmSeg == []:
         #for i in range(pLen):
             #print tSymb.globular
-        ofs.write("-GLOBULAR\n")    
+        ofs.write("-GLOBULAR\n")
         return
     topLab=[tSymb.inside,tSymb.outside]
     if topSeg > 0:
@@ -175,4 +169,3 @@ def writeConsensus(tmSeg,pLen,topSeg,topSum,mVote,tSymb,outf):
     for i in range(bOld,pLen):
         ofs.write( str(topLab[it]) + '\n')
     return 0
-

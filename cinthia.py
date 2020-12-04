@@ -1,119 +1,64 @@
 #!/usr/bin/env python
-
 import sys
 import os
-import tempfile
-from time import localtime, strftime
+import logging
+if 'CINTHIA_ROOT' in os.environ:
+    sys.path.append(os.environ['CINTHIA_ROOT'])
+else:
+    logging.error("CINTHIA_ROOT environment varible is not set")
+    logging.error("Please, set and export CINTHIA_ROOT to point to cinthia root folder")
+    sys.exit(1)
 import argparse
-import modules.cinthiaalgo as cinthia
-import modules.config as cinthiaconfig
-import shutil
+from modules import cinthiaalgo as cinthia
+from modules import config as cfg
+from modules import cpparser as bcp
+from modules import workenv
+from modules import utils
 import re
 import numpy
 from Bio import SeqIO
 
 
-def printDate(msg):
-  print "[%s] %s" % (strftime("%a, %d %b %Y %H:%M:%S", localtime()), msg)
+def main():
+    ## Parsing input arguments
+    DESC="Cinthia: Combined predictor of signal peptide, transit peptide and transmembrane topology"
+    parser = argparse.ArgumentParser(description=DESC)
+    parser.add_argument("-f", "--fasta",
+                        help = "The input protein sequence in FASTA format",
+                        dest = "fasta", required = True)
+    parser.add_argument("-p", "--pssm",
+                        help = "The input PSSM/Profile file (PSIBLAST)",
+                        dest = "pssm", required = True)
+    parser.add_argument("-o", "--out",
+                        help = "The output GFF3 prediction file",
+                        dest = "output", required = True)
+    parser.add_argument("-t", "--forcetopo",
+                        help = "Force topology to contain at least one TM segment",
+                        dest = "forcetopo", action="store_true")
+    ns = parser.parse_args()
 
+    we = workenv.TemporaryEnv()
 
-def SetUpTemporaryEnvironment():
-  tempfile.tempdir = os.path.abspath(tempfile.mkdtemp(prefix="job.tmpd.",
-                                                      dir="."))
-  printDate("Setting up job temporary enviroment [%s]" % tempfile.tempdir)
-
-
-def DestroyTemporaryEnvironment():
-  if not tempfile.tempdir == None:
-    shutil.rmtree(tempfile.tempdir)
-    printDate("Destroying job temporary enviroment [%s]" % tempfile.tempdir)
-
-def getNewTmpFile(prefix, suffix):
-  outTmpFile = tempfile.NamedTemporaryFile(mode   = 'write',
-                                           prefix = prefix,
-                                           suffix = suffix,
-                                           delete = False)
-  outTmpFileName = outTmpFile.name
-  outTmpFile.close()
-  return outTmpFileName
-
-def writeNTerminus(profile, outfile, n, newline=True):
-  try:
-    assert(n < len(profile) and n > 0)
-  except AssertionError:
-    n = len(profile)
-  of = open(outfile, 'w')
-  for i in range(n):
-    of.write(profile[i])
-  if newline:
-    of.write("\n")
-  of.close()
-
-def writeCTerminus(profile, outfile, n, newline=True):
-  try:
-    assert(n < len(profile) and n > 0)
-  except AssertionError:
-    n = 0
-  of = open(outfile, 'w')
-  for i in range(n, len(profile)):
-    of.write(profile[i])
-  if newline:
-    of.write("\n")
-  of.close()
-
-def writeResFile(observation, prediction, outfile):
-  ofs = open(outfile, 'w')
-  ofs.write('# obs hmm_ma\n')
-  for i in range(len(observation)):
-    ofs.write("\t".join(observation[i], prediction[i]) + '\n')
-  ofs.close()
-
-## Models and parameters
-SPmodel=os.path.join(cinthiaconfig.CINTHIA_HOME, 'models','CRF-SP.mod')
-TRmodel=os.path.join(cinthiaconfig.CINTHIA_HOME, 'models','CRF-TR.mod')
-CRFmodel=os.path.join(cinthiaconfig.CINTHIA_HOME, 'models','CRF.modnew')
-CRFForcedModel=os.path.join(cinthiaconfig.CINTHIA_HOME, 'models','CRF_force-tm.modnew')
-HMMUmodel=os.path.join(cinthiaconfig.CINTHIA_HOME, 'models','HMM.modDR')
-HMMWmodel=os.path.join(cinthiaconfig.CINTHIA_HOME, 'models','PES.modDR')
-decoding='posterior-viterbi-sum'
-
-## Parsing input arguments
-DESC="Cinthia: Combined predictor of signal peptide, transit peptide and transmembrane topology"
-parser = argparse.ArgumentParser(description=DESC)
-
-parser.add_argument("-f", "--fasta",
-                    help = "The input protein sequence in FASTA format",
-                    dest = "fasta", required = True)
-parser.add_argument("-s", "--swissprot",
-                    help = "The input sequence profile computed using the SwissProt database",
-                    dest = "swissprot", required = True)
-parser.add_argument("-u", "--uniref",
-                    help = "The input sequence profile computed using the Uniref90 database",
-                    dest = "uniref", required = True)
-parser.add_argument("-o", "--out",
-                    help = "The output prediction file",
-                    dest = "output", required = True)
-parser.add_argument("-t", "--forcetopo",
-                    help = "Force topology to contain at least one TM segment",
-                    dest = "forcetopo", action="store_true")
-
-ns = parser.parse_args()
-
-acc = None
-sequence = None
-for record in SeqIO.parse(ns.fasta, 'fasta'):
-  acc = record.id
-  sequence = str(record.seq)
-  # Only the first sequence is processed
-  break
-
-swissprotProf = open(ns.swissprot).readlines()
-unirefProf = open(ns.uniref).readlines()
-
-assert(len(swissprotProf) == len(sequence))
-assert(len(unirefProf) == len(sequence))
-
-SetUpTemporaryEnvironment()
+    try:
+        record = SeqIO.read(ns.fasta, "fasta")
+    except:
+        logging.exception("Error reading FASTA: file is not FASTA or more than one sequence is present")
+        we.destroy()
+        sys.exit(1)
+    else:
+        acc = record.id
+        sequence = str(record.seq)
+        try:
+            utils.check_sequence_pssm_match(sequence, ns.pssm)
+        except:
+            logging.exception("Error in PSSM: sequence and provided PSSM do not match.")
+            we.destroy()
+            sys.exit(1)
+        else:
+            profile = bcp.BlastCheckPointProfile(ns.pssm)
+            if ns.forcetopo:
+                CRFprediction, CRFprobs = cinthia.runCRF(cfg.CRFFORCEDMODEL, profile, we)
+                
 
 SPprofile   = getNewTmpFile("sp.", ".prof")
 SPresults   = getNewTmpFile("sp.", ".res")
@@ -128,31 +73,13 @@ CINTHIAOut  = getNewTmpFile("cinthia.", ".output")
 
 cleavageSite = 0
 peptide = 'none'
-"""
-if len(sequence) > 45:
-  printDate("Searching for signal or transit peptides at the N-terminus of query")
-  writeNTerminus(swissprotProf, SPprofile, 60)
-  _, sppred = cinthia.runCRF(SPmodel, SPprofile, SPresults, decoding, 5)
-  if 'S' in sppred:
-    peptide = 'signal'
-    while sppred[cleavageSite] == sppred[cleavageSite+1] and cleavageSite < 60:
-      cleavageSite = cleavageSite + 1
-    printDate("Signal peptide found from 1 to %d." % (cleavageSite + 1,))
-  else:
-    writeNTerminus(swissprotProf, TRprofile, 150)
-    _, tppred = cinthia.runCRF(TRmodel, TRprofile, TRresults, decoding, 7)
-    if 'P' in tppred:
-      peptide = 'transit'
-      while tppred[cleavageSite] == tppred[cleavageSite+1] and cleavageSite < 150:
-        cleavageSite = cleavageSite + 1
-      printDate("Transit peptide found from 1 to %d." %  (cleavageSite + 1,))
-"""
+
 writeCTerminus(unirefProf, HMMSprofile, cleavageSite, newline=False)
 writeCTerminus(unirefProf, CRFprofile, cleavageSite)
 
 
 if ns.forcetopo:
-  _, CRFprediction, CRFprobs = cinthia.runCRF(CRFForcedModel, CRFprofile, CRFraw, CRFpost, decoding, 8)
+  _, CRFprediction, CRFprobs = cinthia.runCRF(CRFForcedModel, CRFprofile, CRFraw, CRFpost, decoding, 8, we)
   ofs = open(CINTHIAInp, 'w')
   ofs.write("# M1 M2 M3 M4\n")
   for i in range(len(CRFprediction)):
@@ -162,7 +89,7 @@ if ns.forcetopo:
   tsymb=cinthia.tmsymbols()
   tmseg,topSeg,topSum,mVote=cinthia.topology0(DP,names,12,35,0.0,tsymb)
   pLen=len(DP[names[0]])
-  
+
   cinthia.writeConsensus(tmseg,pLen,topSeg,topSum,mVote,tsymb,CINTHIAOut)
   topology = "".join([x.strip() for x in open(CINTHIAOut).readlines()]).replace("l", "i").replace("L", "o")
 else:
@@ -172,7 +99,7 @@ else:
   _, HMMUprediction = cinthia.runHMM(HMMUmodel, HMMSprofile)
   _, HMMWprediction = cinthia.runHMM(HMMWmodel, HMMSprofile)
 
-  if 'T' in CRFprediction and 'T' in HMMUprediction and 'T' in HMMWprediction: 
+  if 'T' in CRFprediction and 'T' in HMMUprediction and 'T' in HMMWprediction:
     ofs = open(CINTHIAInp, 'w')
     ofs.write("# M1 M2 M3 M4\n")
     for i in range(len(CRFprediction)):
@@ -185,7 +112,7 @@ else:
     pLen=len(DP[names[0]])
 
     cinthia.writeConsensus(tmseg,pLen,topSeg,topSum,mVote,tsymb,CINTHIAOut)
-    topology = "".join([x.strip() for x in open(CINTHIAOut).readlines()]) 
+    topology = "".join([x.strip() for x in open(CINTHIAOut).readlines()])
     if not re.match("-GLOBULAR", topology):
       topology = "".join([x.strip() for x in open(CINTHIAOut).readlines()]).replace("l", "i").replace("L", "o")
   else:
@@ -193,21 +120,9 @@ else:
 
 peptideStr = ""
 sigStr = "SP=NO"
-"""
-if peptide == "signal":
-  sigStr += "1-%d" % (cleavageSite+1)
-  peptideStr = "S" * (cleavageSite+1)
-else:
-  sigStr += "NO"
-"""
+
 trStr = "TR=NO"
-"""
-if peptide == "transit":
-  trStr += "1-%d" % (cleavageSite+1)
-  peptideStr = "P" * (cleavageSite+1)
-else:
-  trStr += "NO"
-"""
+
 score = str(round(numpy.mean([CRFprobs[i] for i in range(len(CRFprobs)) if CRFprediction[i] == "T"]), 2))
 ofs = open(ns.output, 'w')
 ofs.write( "\t".join([acc, sigStr, trStr, peptideStr+topology, score]) + '\n' )
@@ -215,4 +130,3 @@ ofs.write( "\t".join([acc, sigStr, trStr, peptideStr+topology, score]) + '\n' )
 DestroyTemporaryEnvironment()
 
 sys.exit(0)
-

@@ -2,7 +2,7 @@ import os
 
 CINTHIA_ROOT = os.environ['CINTHIA_ROOT']
 
-BIOCRF = os.path.join(CINTHIA_ROOT, 'tools' 'biocrf-static')
+BIOCRF = os.path.join(CINTHIA_ROOT, 'tools', 'biocrf-static')
 
 
 ## Models and parameters
@@ -15,3 +15,6 @@ HMMWMODEL=os.path.join(CINTHIA_ROOT, 'models','PES.modDR')
 
 CRF_DECONDING='posterior-viterbi-sum'
 CRF_WINDOW = 8
+
+BLASTALPH = "ARNDCQEGHILKMFPSTWYV"
+HSSPALPH = "VLIMFWYGAPSTCHRKQEND"

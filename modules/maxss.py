@@ -17,7 +17,7 @@ class MaxSubSeq :
 
     Provide list interface to access score values, does not support slicing.
     '''
-    
+
     def __init__(self, R, lmin, lmax) :
         '''\
         Compute optimal susquences and store results in newly created
@@ -41,7 +41,7 @@ class MaxSubSeq :
             bottom = bottom - abs(R[n])
         bottom = 2 * bottom
         # max_k is the maximum k s.t. S(N, k) > bottom
-        max_k = (N+1) / (lmin+1)
+        max_k = int((N+1) / (lmin+1))
         # init score matrix: s[k][n] = S(n, k+1)
         self.s = [None] * (max_k+1)
         sk1 = self.s[0] = [0] * (N+1)
@@ -65,7 +65,7 @@ class MaxSubSeq :
             self.s[k] = sk
             sk1 = sk
             if(self.s[k][N-1] > self.s[self.max_model][N-1]):
-               self.max_model=k 
+               self.max_model=k
 
         # Store results in the newly created object
         self.len = N
@@ -73,7 +73,7 @@ class MaxSubSeq :
         self.lmax = lmax
         self.max_k = max_k
         self.r_sum = r_sum
-        
+
     def max_seq(self, k = None) :
         '''\
         Returns a sequence L of len 2*k+1 such that the sequence

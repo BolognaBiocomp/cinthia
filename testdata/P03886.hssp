@@ -1,0 +1,826 @@
+ID Pseudo hssp file.
+SEQ 
+SEQ sp|P03886|NU1M_HUMAN NADH-ubiquinone oxidoreductase chain 1 OS=Ho...  620        0.0   
+SEQ sp|Q9T9W3|NU1M_PANTR NADH-ubiquinone oxidoreductase chain 1 OS=Pa...  556        0.0   
+SEQ sp|Q9T9Z0|NU1M_GORGO NADH-ubiquinone oxidoreductase chain 1 OS=Go...  533        0.0   
+SEQ sp|Q96126|NU1M_HYLLA NADH-ubiquinone oxidoreductase chain 1 OS=Hy...  519        0.0   
+SEQ sp|Q9ZXY4|NU1M_PAPHA NADH-ubiquinone oxidoreductase chain 1 OS=Pa...  514        0.0   
+SEQ sp|Q9T9X9|NU1M_PONPY NADH-ubiquinone oxidoreductase chain 1 OS=Po...  512        0.0   
+SEQ sp|Q8M891|NU1M_HSUTH NADH-ubiquinone oxidoreductase chain 1 OS=Hs...  505        0.0   
+SEQ sp|O78747|NU1M_SHEEP NADH-ubiquinone oxidoreductase chain 1 OS=Ov...  503        3e-180
+SEQ sp|Q53AV2|NU1M_SAGLE NADH-ubiquinone oxidoreductase chain 1 OS=Sa...  502        5e-180
+SEQ sp|O78694|NU1M_SAGOE NADH-ubiquinone oxidoreductase chain 1 OS=Sa...  502        8e-180
+SEQ sp|Q8M881|NU1M_NYCPV NADH-ubiquinone oxidoreductase chain 1 OS=Ny...  500        4e-179
+SEQ sp|Q96189|NU1M_RHIUN NADH-ubiquinone oxidoreductase chain 1 OS=Rh...  499        1e-178
+SEQ sp|O78695|NU1M_SAPAP NADH-ubiquinone oxidoreductase chain 1 OS=Sa...  499        2e-178
+SEQ sp|P92690|NU1M_PONAB NADH-ubiquinone oxidoreductase chain 1 OS=Po...  498        4e-178
+SEQ sp|Q70Y29|NU1M_MYRTR NADH-ubiquinone oxidoreductase chain 1 OS=My...  497        5e-178
+SEQ sp|Q9ZZZ1|NU1M_HIPAM NADH-ubiquinone oxidoreductase chain 1 OS=Hi...  494        9e-177
+SEQ sp|O78698|NU1M_TAMSI NADH-ubiquinone oxidoreductase chain 1 OS=Ta...  492        4e-176
+SEQ sp|O78702|NU1M_MANTE NADH-ubiquinone oxidoreductase chain 1 OS=Ma...  491        1e-175
+SEQ sp|O78693|NU1M_ATEPA NADH-ubiquinone oxidoreductase chain 1 OS=At...  491        1e-175
+SEQ sp|O79874|NU1M_PIG NADH-ubiquinone oxidoreductase chain 1 OS=Sus ...  491        2e-175
+SEQ sp|O78701|NU1M_BRAVA NADH-ubiquinone oxidoreductase chain 1 OS=Br...  490        3e-175
+SEQ sp|P24967|NU1M_BALPH NADH-ubiquinone oxidoreductase chain 1 OS=Ba...  490        3e-175
+SEQ sp|O03850|NU1M_CERSI NADH-ubiquinone oxidoreductase chain 1 OS=Ce...  490        3e-175
+SEQ sp|Q8M888|NU1M_TADIN NADH-ubiquinone oxidoreductase chain 1 OS=Ta...  490        4e-175
+SEQ sp|P92475|NU1M_EQUAS NADH-ubiquinone oxidoreductase chain 1 OS=Eq...  490        5e-175
+SEQ sp|Q5Y4R0|NU1M_BOSMU NADH-ubiquinone oxidoreductase chain 1 OS=Bo...  489        9e-175
+SEQ sp|Q8M894|NU1M_TAPME NADH-ubiquinone oxidoreductase chain 1 OS=Ta...  488        2e-174
+SEQ sp|P03888|NU1M_MOUSE NADH-ubiquinone oxidoreductase chain 1 OS=Mu...  488        2e-174
+SEQ sp|P03887|NU1M_BOVIN NADH-ubiquinone oxidoreductase chain 1 OS=Bo...  488        3e-174
+SEQ sp|P48652|NU1M_HORSE NADH-ubiquinone oxidoreductase chain 1 OS=Eq...  488        3e-174
+SEQ sp|Q8M897|NU1M_HIPTE NADH-ubiquinone oxidoreductase chain 1 OS=Hi...  487        6e-174
+SEQ sp|Q9MP77|NU1M_HIPDI NADH-ubiquinone oxidoreductase chain 1 OS=Hi...  487        8e-174
+SEQ sp|Q3L6Y8|NU1M_CANLU NADH-ubiquinone oxidoreductase chain 1 OS=Ca...  486        1e-173
+SEQ sp|P92604|NU1M_CANLF NADH-ubiquinone oxidoreductase chain 1 OS=Ca...  486        1e-173
+SEQ sp|Q6EMT1|NU1M_BOSIN NADH-ubiquinone oxidoreductase chain 1 OS=Bo...  486        1e-173
+SEQ sp|O78696|NU1M_LEMCA NADH-ubiquinone oxidoreductase chain 1 OS=Le...  485        3e-173
+SEQ sp|Q8M896|NU1M_COEFR NADH-ubiquinone oxidoreductase chain 1 OS=Co...  484        5e-173
+SEQ sp|P38598|NU1M_HALGR NADH-ubiquinone oxidoreductase chain 1 OS=Ha...  484        5e-173
+SEQ sp|O78699|NU1M_TAMTE NADH-ubiquinone oxidoreductase chain 1 OS=Ta...  484        7e-173
+SEQ sp|P48900|NU1M_FELCA NADH-ubiquinone oxidoreductase chain 1 OS=Fe...  484        8e-173
+SEQ sp|Q70Y28|NU1M_CYCDI NADH-ubiquinone oxidoreductase chain 1 OS=Cy...  482        6e-172
+SEQ sp|O78697|NU1M_NYCCO NADH-ubiquinone oxidoreductase chain 1 OS=Ny...  481        2e-171
+SEQ sp|Q70Y26|NU1M_EUPSX NADH-ubiquinone oxidoreductase chain 1 OS=Eu...  480        3e-171
+SEQ sp|P41296|NU1M_BALMU NADH-ubiquinone oxidoreductase chain 1 OS=Ba...  480        3e-171
+SEQ sp|O78710|NU1M_PERGU NADH-ubiquinone oxidoreductase chain 1 OS=Pe...  478        2e-170
+SEQ sp|P03889|NU1M_RAT NADH-ubiquinone oxidoreductase chain 1 OS=Ratt...  478        2e-170
+SEQ sp|Q8M880|NU1M_EPTNI NADH-ubiquinone oxidoreductase chain 1 OS=Ep...  476        8e-170
+SEQ sp|Q70Y24|NU1M_ZAEPI NADH-ubiquinone oxidoreductase chain 1 OS=Za...  476        1e-169
+SEQ sp|Q8M893|NU1M_EMBAL NADH-ubiquinone oxidoreductase chain 1 OS=Em...  476        1e-169
+SEQ sp|Q00505|NU1M_PHOVI NADH-ubiquinone oxidoreductase chain 1 OS=Ph...  474        6e-169
+SEQ sp|Q8M899|NU1M_PTEGI NADH-ubiquinone oxidoreductase chain 1 OS=Pt...  474        1e-168
+SEQ sp|Q8M873|NU1M_MURFL NADH-ubiquinone oxidoreductase chain 1 OS=Mu...  474        1e-168
+SEQ sp|Q8M892|NU1M_PHYEO NADH-ubiquinone oxidoreductase chain 1 OS=Ph...  474        1e-168
+SEQ sp|Q8M867|NU1M_MURSU NADH-ubiquinone oxidoreductase chain 1 OS=Mu...  474        1e-168
+SEQ sp|Q70Y23|NU1M_TOLMA NADH-ubiquinone oxidoreductase chain 1 OS=To...  473        2e-168
+SEQ sp|O79427|NU1M_RABIT NADH-ubiquinone oxidoreductase chain 1 OS=Or...  473        3e-168
+SEQ sp|P92659|NU1M_MACRO NADH-ubiquinone oxidoreductase chain 1 OS=Ma...  472        5e-168
+SEQ sp|O78708|NU1M_VOMUR NADH-ubiquinone oxidoreductase chain 1 OS=Vo...  469        5e-167
+SEQ sp|Q70Y22|NU1M_PRIMA NADH-ubiquinone oxidoreductase chain 1 OS=Pr...  467        6e-166
+SEQ sp|Q9TA29|NU1M_LOXAF NADH-ubiquinone oxidoreductase chain 1 OS=Lo...  466        8e-166
+SEQ sp|O78705|NU1M_MACRU NADH-ubiquinone oxidoreductase chain 1 OS=Ma...  466        1e-165
+SEQ sp|O78700|NU1M_CABUN NADH-ubiquinone oxidoreductase chain 1 (Frag...  464        5e-165
+SEQ sp|Q38PS2|NU1M_MAMPR NADH-ubiquinone oxidoreductase chain 1 OS=Ma...  461        2e-163
+SEQ sp|Q2I3H4|NU1M_ELEMA NADH-ubiquinone oxidoreductase chain 1 OS=El...  459        7e-163
+SEQ sp|Q8W9N6|NU1M_DUGDU NADH-ubiquinone oxidoreductase chain 1 OS=Du...  456        2e-161
+SEQ sp|O78706|NU1M_PHACI NADH-ubiquinone oxidoreductase chain 1 OS=Ph...  455        3e-161
+SEQ sp|O80003|NU1M_NYCNO NADH-ubiquinone oxidoreductase chain 1 (Frag...  453        1e-160
+SEQ sp|Q70Y27|NU1M_DASKA NADH-ubiquinone oxidoreductase chain 1 OS=Da...  453        1e-160
+SEQ sp|O78711|NU1M_SARHA NADH-ubiquinone oxidoreductase chain 1 OS=Sa...  452        6e-160
+SEQ sp|O21325|NU1M_DASNO NADH-ubiquinone oxidoreductase chain 1 OS=Da...  451        9e-160
+SEQ sp|Q37717|NU1M_ORNAN NADH-ubiquinone oxidoreductase chain 1 OS=Or...  451        1e-159
+SEQ sp|O78709|NU1M_NOTTY NADH-ubiquinone oxidoreductase chain 1 OS=No...  451        2e-159
+SEQ sp|P41304|NU1M_DIDVI NADH-ubiquinone oxidoreductase chain 1 OS=Di...  449        8e-159
+SEQ sp|O78707|NU1M_TRIVU NADH-ubiquinone oxidoreductase chain 1 OS=Tr...  448        1e-158
+SEQ sp|O78679|NU1M_CARAU NADH-ubiquinone oxidoreductase chain 1 OS=Ca...  448        2e-158
+SEQ sp|O78704|NU1M_MACEU NADH-ubiquinone oxidoreductase chain 1 OS=Ma...  447        4e-158
+SEQ sp|Q8M889|NU1M_DIAYO NADH-ubiquinone oxidoreductase chain 1 OS=Di...  447        4e-158
+SEQ sp|O78714|NU1M_TACAC NADH-ubiquinone oxidoreductase chain 1 OS=Ta...  446        6e-158
+SEQ sp|O78703|NU1M_MONDO NADH-ubiquinone oxidoreductase chain 1 OS=Mo...  446        2e-157
+SEQ sp|P24969|NU1M_CYPCA NADH-ubiquinone oxidoreductase chain 1 OS=Cy...  443        1e-156
+SEQ sp|Q70Y30|NU1M_CHODI NADH-ubiquinone oxidoreductase chain 1 OS=Ch...  442        4e-156
+SEQ sp|O78712|NU1M_SMIMA NADH-ubiquinone oxidoreductase chain 1 OS=Sm...  441        9e-156
+SEQ sp|O78715|NU1M_SMICR NADH-ubiquinone oxidoreductase chain 1 OS=Sm...  439        5e-155
+SEQ sp|O21408|NU1M_SCYCA NADH-ubiquinone oxidoreductase chain 1 OS=Sc...  437        4e-154
+SEQ sp|O78713|NU1M_ZAGBR NADH-ubiquinone oxidoreductase chain 1 (Frag...  436        5e-154
+SEQ sp|P34186|NU1M_FORLA NADH-ubiquinone oxidoreductase chain 1 OS=Fo...  432        4e-152
+SEQ sp|Q94YT7|NU1M_VARDU NADH-ubiquinone oxidoreductase chain 1 OS=Va...  429        8e-151
+SEQ sp|Q9ZZ54|NU1M_SQUAC NADH-ubiquinone oxidoreductase chain 1 OS=Sq...  428        1e-150
+SEQ sp|P03890|NU1M_XENLA NADH-ubiquinone oxidoreductase chain 1 OS=Xe...  424        4e-149
+SEQ sp|Q9MIZ0|NU1M_DANRE NADH-ubiquinone oxidoreductase chain 1 OS=Da...  424        7e-149
+SEQ sp|Q4JQI7|NU1M_TETNG NADH-ubiquinone oxidoreductase chain 1 OS=Te...  422        2e-148
+SEQ sp|Q37676|NU1M_SALSA NADH-ubiquinone oxidoreductase chain 1 OS=Sa...  422        3e-148
+SEQ sp|P18936|NU1M_CHICK NADH-ubiquinone oxidoreductase chain 1 OS=Ga...  421        1e-147
+SEQ sp|O48358|NU1M_THYAR NADH-ubiquinone oxidoreductase chain 1 OS=Th...  420        2e-147
+SEQ sp|P55779|NU1M_GADMO NADH-ubiquinone oxidoreductase chain 1 OS=Ga...  420        3e-147
+SEQ sp|O03847|NU1M_LATCH NADH-ubiquinone oxidoreductase chain 1 OS=La...  419        4e-147
+SEQ sp|P48174|NU1M_ONCMY NADH-ubiquinone oxidoreductase chain 1 OS=On...  419        5e-147
+SEQ sp|Q96182|NU1M_POLOR NADH-ubiquinone oxidoreductase chain 1 OS=Po...  419        5e-147
+SEQ sp|Q94VC3|NU1M_VARRU NADH-ubiquinone oxidoreductase chain 1 OS=Va...  418        9e-147
+SEQ sp|Q85UK4|NU1M_SYNCH NADH-ubiquinone oxidoreductase chain 1 OS=Sy...  417        4e-146
+SEQ sp|Q94VK0|NU1M_VARBA NADH-ubiquinone oxidoreductase chain 1 OS=Va...  414        7e-145
+SEQ sp|O21397|NU1M_STRCA NADH-ubiquinone oxidoreductase chain 1 OS=St...  413        1e-144
+SEQ sp|Q94VF8|NU1M_VARJO NADH-ubiquinone oxidoreductase chain 1 OS=Va...  412        3e-144
+SEQ sp|P24968|NU1M_COTJA NADH-ubiquinone oxidoreductase chain 1 OS=Co...  409        7e-143
+SEQ sp|Q94VI4|NU1M_VARFL NADH-ubiquinone oxidoreductase chain 1 OS=Va...  408        1e-142
+SEQ sp|P16672|NU1M_LITCT NADH-ubiquinone oxidoreductase chain 1 OS=Li...  400        1e-139
+SEQ sp|O79546|NU1M_LYCSM NADH-ubiquinone oxidoreductase chain 1 OS=Ly...  397        2e-138
+SEQ sp|O21077|NU1M_MYXGL NADH-ubiquinone oxidoreductase chain 1 OS=My...  395        9e-138
+SEQ sp|O47868|NU1M_ALLMI NADH-ubiquinone oxidoreductase chain 1 OS=Al...  390        2e-135
+SEQ sp|O79670|NU1M_PELSU NADH-ubiquinone oxidoreductase chain 1 OS=Pe...  388        6e-135
+SEQ sp|Q37603|NU1M_PETMA NADH-ubiquinone oxidoreductase chain 1 OS=Pe...  377        1e-130
+SEQ sp|O21069|NU1M_LAMFL NADH-ubiquinone oxidoreductase chain 1 OS=La...  364        2e-125
+SEQ sp|P69235|NU1M_BRALA NADH-ubiquinone oxidoreductase chain 1 OS=Br...  360        4e-124
+SEQ sp|P69234|NU1M_BRAFL NADH-ubiquinone oxidoreductase chain 1 OS=Br...  360        4e-124
+SEQ sp|P34846|NU1M_ANOGA NADH-ubiquinone oxidoreductase chain 1 OS=An...  332        6e-113
+SEQ sp|P33502|NU1M_ANOQU NADH-ubiquinone oxidoreductase chain 1 OS=An...  330        5e-112
+SEQ sp|B0FWD8|NU1M_AEDAE NADH-ubiquinone oxidoreductase chain 1 OS=Ae...  328        2e-111
+SEQ sp|Q37556|NU1M_METSE NADH-ubiquinone oxidoreductase chain 1 OS=Me...  322        1e-108
+SEQ sp|P12772|NU1M_PARLI NADH-ubiquinone oxidoreductase chain 1 OS=Pa...  312        6e-105
+SEQ sp|P23650|NU1M_PATPE NADH-ubiquinone oxidoreductase chain 1 OS=Pa...  310        5e-104
+SEQ sp|P18929|NU1M_DROME NADH-ubiquinone oxidoreductase chain 1 OS=Dr...  308        2e-103
+SEQ sp|P51937|NU1M_DROSU NADH-ubiquinone oxidoreductase chain 1 OS=Dr...  307        5e-103
+SEQ sp|P84294|NU1M_DROPE NADH-ubiquinone oxidoreductase chain 1 OS=Dr...  306        1e-102
+SEQ sp|P48899|NU1M_CYACA NADH-ubiquinone oxidoreductase chain 1 OS=Cy...  305        7e-102
+SEQ sp|P07710|NU1M_DROYA NADH-ubiquinone oxidoreductase chain 1 OS=Dr...  304        8e-102
+SEQ sp|Q2W3J1|NUOH_MAGSA NADH-quinone oxidoreductase subunit H OS=Mag...  304        2e-101
+SEQ sp|P09045|NU1M_LOCMI NADH-ubiquinone oxidoreductase chain 1 OS=Lo...  301        1e-100
+SEQ sp|P26845|NU1M_MARPO NADH-ubiquinone oxidoreductase chain 1 OS=Ma...  299        9e-100
+SEQ sp|P48898|NU1M_CHOCR NADH-ubiquinone oxidoreductase chain 1 OS=Ch...  298        4e-99 
+SEQ sp|O63623|NU1M_DALCH NADH-ubiquinone oxidoreductase chain 1 OS=Da...  295        2e-98 
+SEQ sp|B6ISX4|NUOH_RHOCS NADH-quinone oxidoreductase subunit H OS=Rho...  295        4e-98 
+SEQ sp|P31839|NU1M_OENBE NADH-ubiquinone oxidoreductase chain 1 OS=Oe...  294        8e-98 
+SEQ sp|Q3YS40|NUOH_EHRCJ NADH-quinone oxidoreductase subunit H OS=Ehr...  295        2e-97 
+SEQ sp|Q37546|NU1M_LUMTE NADH-ubiquinone oxidoreductase chain 1 OS=Lu...  293        2e-97 
+SEQ sp|P92558|NU1M_ARATH NADH-ubiquinone oxidoreductase chain 1 OS=Ar...  293        2e-97 
+SEQ sp|Q68VV3|NUOH_RICTY NADH-quinone oxidoreductase subunit H OS=Ric...  293        3e-97 
+SEQ sp|Q9ZCF7|NUOH_RICPR NADH-quinone oxidoreductase subunit H OS=Ric...  291        3e-96 
+SEQ sp|Q73IK1|NUOH_WOLPM NADH-quinone oxidoreductase subunit H OS=Wol...  290        4e-96 
+SEQ sp|Q2GGK6|NUOH_EHRCR NADH-quinone oxidoreductase subunit H OS=Ehr...  291        5e-96 
+SEQ sp|Q5GSR1|NUOH_WOLTR NADH-quinone oxidoreductase subunit H OS=Wol...  290        5e-96 
+SEQ sp|Q01148|NU1M_WHEAT NADH-ubiquinone oxidoreductase chain 1 OS=Tr...  289        1e-95 
+SEQ sp|C3PLS6|NUOH_RICAE NADH-quinone oxidoreductase subunit H OS=Ric...  289        2e-95 
+SEQ sp|Q2RU33|NUOH_RHORT NADH-quinone oxidoreductase subunit H OS=Rho...  289        2e-95 
+SEQ sp|Q4UK23|NUOH_RICFE NADH-quinone oxidoreductase subunit H OS=Ric...  289        2e-95 
+SEQ sp|C4K222|NUOH_RICPU NADH-quinone oxidoreductase subunit H OS=Ric...  288        4e-95 
+SEQ sp|A0LDS0|NUOH_MAGMM NADH-quinone oxidoreductase subunit H OS=Mag...  288        5e-95 
+SEQ sp|A8GTS1|NUOH_RICRS NADH-quinone oxidoreductase subunit H OS=Ric...  287        6e-95 
+SEQ sp|B0BVB1|NUOH_RICRO NADH-quinone oxidoreductase subunit H OS=Ric...  287        6e-95 
+SEQ sp|Q1RKD1|NUOH_RICBR NADH-quinone oxidoreductase subunit H OS=Ric...  287        6e-95 
+SEQ sp|Q92G93|NUOH_RICCN NADH-quinone oxidoreductase subunit H OS=Ric...  287        1e-94 
+SEQ sp|A8EZZ9|NUOH_RICCK NADH-quinone oxidoreductase subunit H OS=Ric...  286        2e-94 
+SEQ sp|A8GY33|NUOH_RICB8 NADH-quinone oxidoreductase subunit H OS=Ric...  286        2e-94 
+SEQ sp|Q5HB99|NUOH_EHRRW NADH-quinone oxidoreductase subunit H OS=Ehr...  287        2e-94 
+SEQ sp|Q5FGW5|NUOH_EHRRG NADH-quinone oxidoreductase subunit H OS=Ehr...  287        2e-94 
+SEQ sp|A8GPY7|NUOH_RICAH NADH-quinone oxidoreductase subunit H OS=Ric...  286        3e-94 
+SEQ sp|P24995|NU1M_PISOC NADH-ubiquinone oxidoreductase chain 1 OS=Pi...  283        1e-93 
+SEQ sp|P15548|NU1M_STRPU NADH-ubiquinone oxidoreductase chain 1 OS=St...  283        1e-93 
+SEQ sp|Q0BSK9|NUOH_GRABC NADH-quinone oxidoreductase subunit H OS=Gra...  283        3e-93 
+SEQ sp|Q2LCR1|NU1M_DICCI NADH-ubiquinone oxidoreductase chain 1 OS=Di...  278        1e-91 
+SEQ sp|Q5PAQ2|NUOH_ANAMM NADH-quinone oxidoreductase subunit H OS=Ana...  279        1e-91 
+SEQ sp|Q1LPV6|NUOH_CUPMC NADH-quinone oxidoreductase subunit H OS=Cup...  277        7e-91 
+SEQ sp|Q37313|NU1M_DICDI NADH-ubiquinone oxidoreductase chain 1 OS=Di...  276        1e-90 
+SEQ sp|Q2GK09|NUOH_ANAPZ NADH-quinone oxidoreductase subunit H OS=Ana...  276        3e-90 
+SEQ sp|Q0H8X5|NU1M_USTMA NADH-ubiquinone oxidoreductase chain 1 OS=Us...  275        4e-90 
+SEQ sp|B3CUK2|NUOH_ORITI NADH-quinone oxidoreductase subunit H OS=Ori...  275        7e-90 
+SEQ sp|A5CFN5|NUOH_ORITB NADH-quinone oxidoreductase subunit H OS=Ori...  275        7e-90 
+SEQ sp|Q0KCS3|NUOH_CUPNH NADH-quinone oxidoreductase subunit H OS=Cup...  274        1e-89 
+SEQ sp|B3R3X4|NUOH_CUPTR NADH-quinone oxidoreductase subunit H OS=Cup...  273        3e-89 
+SEQ sp|A5CXG4|NUOH_VESOH NADH-quinone oxidoreductase subunit H OS=Ves...  273        4e-89 
+SEQ sp|O47479|NU1M_HETBL NADH-ubiquinone oxidoreductase chain 1 OS=He...  270        1e-88 
+SEQ sp|Q4FM84|NUOH_PELUB NADH-quinone oxidoreductase subunit H OS=Pel...  270        2e-88 
+SEQ sp|B2U7Q4|NUOH_RALPJ NADH-quinone oxidoreductase subunit H OS=Ral...  271        2e-88 
+SEQ sp|Q3J835|NUOH2_NITOC NADH-quinone oxidoreductase subunit H 2 OS=...  270        3e-88 
+SEQ sp|Q39EF2|NUOH_BURL3 NADH-quinone oxidoreductase subunit H OS=Bur...  270        4e-88 
+SEQ sp|Q473T6|NUOH_CUPNJ NADH-quinone oxidoreductase subunit H OS=Cup...  270        5e-88 
+SEQ sp|Q8XXQ8|NUOH_RALSO NADH-quinone oxidoreductase subunit H OS=Ral...  270        6e-88 
+SEQ sp|Q37714|NU1M_ARTSF NADH-ubiquinone oxidoreductase chain 1 OS=Ar...  268        9e-88 
+SEQ sp|A9AFZ4|NUOH_BURM1 NADH-quinone oxidoreductase subunit H OS=Bur...  270        1e-87 
+SEQ sp|Q63VM6|NUOH_BURPS NADH-quinone oxidoreductase subunit H OS=Bur...  269        1e-87 
+SEQ sp|A3N7M4|NUOH_BURP6 NADH-quinone oxidoreductase subunit H OS=Bur...  269        1e-87 
+SEQ sp|Q3JUA2|NUOH_BURP1 NADH-quinone oxidoreductase subunit H OS=Bur...  269        1e-87 
+SEQ sp|A3NTB3|NUOH_BURP0 NADH-quinone oxidoreductase subunit H OS=Bur...  269        1e-87 
+SEQ sp|Q62IP2|NUOH_BURMA NADH-quinone oxidoreductase subunit H OS=Bur...  269        1e-87 
+SEQ sp|B2T2F4|NUOH_PARPJ NADH-quinone oxidoreductase subunit H OS=Par...  269        1e-87 
+SEQ sp|A1VM67|NUOH_POLNA NADH-quinone oxidoreductase subunit H OS=Pol...  269        1e-87 
+SEQ sp|Q7NZH4|NUOH_CHRVO NADH-quinone oxidoreductase subunit H OS=Chr...  269        2e-87 
+SEQ sp|A1TLM3|NUOH_ACIAC NADH-quinone oxidoreductase subunit H OS=Aci...  269        2e-87 
+SEQ sp|A4JGC3|NUOH_BURVG NADH-quinone oxidoreductase subunit H OS=Bur...  269        2e-87 
+SEQ sp|A1W4M9|NUOH_ACISJ NADH-quinone oxidoreductase subunit H OS=Aci...  268        3e-87 
+SEQ sp|Q2SZM8|NUOH_BURTA NADH-quinone oxidoreductase subunit H OS=Bur...  268        3e-87 
+SEQ sp|Q142G6|NUOH_PARXL NADH-quinone oxidoreductase subunit H OS=Par...  268        3e-87 
+SEQ sp|Q0BDD7|NUOH_BURCM NADH-quinone oxidoreductase subunit H OS=Bur...  268        4e-87 
+SEQ sp|B1YTQ0|NUOH_BURA4 NADH-quinone oxidoreductase subunit H OS=Bur...  268        4e-87 
+SEQ sp|A1WLN7|NUOH_VEREI NADH-quinone oxidoreductase subunit H OS=Ver...  267        1e-86 
+SEQ sp|Q3SJQ0|NUOH_THIDA NADH-quinone oxidoreductase subunit H OS=Thi...  266        1e-86 
+SEQ sp|A1AVR9|NUOH_RUTMC NADH-quinone oxidoreductase subunit H OS=Rut...  267        1e-86 
+SEQ sp|Q5WT27|NUOH_LEGPL NADH-quinone oxidoreductase subunit H OS=Leg...  266        2e-86 
+SEQ sp|Q5ZRU5|NUOH_LEGPH NADH-quinone oxidoreductase subunit H OS=Leg...  265        2e-86 
+SEQ sp|B4E5L5|NUOH_BURCJ NADH-quinone oxidoreductase subunit H OS=Bur...  266        3e-86 
+SEQ sp|Q83BR2|NUOH_COXBU NADH-quinone oxidoreductase subunit H OS=Cox...  265        4e-86 
+SEQ sp|A9N8W5|NUOH_COXBR NADH-quinone oxidoreductase subunit H OS=Cox...  265        4e-86 
+SEQ sp|A9KBL2|NUOH_COXBN NADH-quinone oxidoreductase subunit H OS=Cox...  265        4e-86 
+SEQ sp|B6J6A2|NUOH_COXB1 NADH-quinone oxidoreductase subunit H OS=Cox...  265        4e-86 
+SEQ sp|B6IZ52|NUOH_COXB2 NADH-quinone oxidoreductase subunit H OS=Cox...  265        4e-86 
+SEQ sp|A5IHV6|NUOH_LEGPC NADH-quinone oxidoreductase subunit H OS=Leg...  265        5e-86 
+SEQ sp|A0K916|NUOH_BURCH NADH-quinone oxidoreductase subunit H OS=Bur...  265        6e-86 
+SEQ sp|B1JVN4|NUOH_BURCC NADH-quinone oxidoreductase subunit H OS=Bur...  265        6e-86 
+SEQ sp|Q1BV20|NUOH_BURCA NADH-quinone oxidoreductase subunit H OS=Bur...  265        6e-86 
+SEQ sp|A4IVZ9|NUOH_FRATW NADH-quinone oxidoreductase subunit H OS=Fra...  263        1e-85 
+SEQ sp|Q5NIM8|NUOH_FRATT NADH-quinone oxidoreductase subunit H OS=Fra...  263        1e-85 
+SEQ sp|Q0BK58|NUOH_FRATO NADH-quinone oxidoreductase subunit H OS=Fra...  263        1e-85 
+SEQ sp|A0Q8G5|NUOH_FRATN NADH-quinone oxidoreductase subunit H OS=Fra...  263        1e-85 
+SEQ sp|Q2A1F7|NUOH_FRATH NADH-quinone oxidoreductase subunit H OS=Fra...  263        1e-85 
+SEQ sp|A7NEK3|NUOH_FRATF NADH-quinone oxidoreductase subunit H OS=Fra...  263        1e-85 
+SEQ sp|Q14K31|NUOH_FRAT1 NADH-quinone oxidoreductase subunit H OS=Fra...  263        1e-85 
+SEQ sp|Q5P1E3|NUOH_AROAE NADH-quinone oxidoreductase subunit H OS=Aro...  264        1e-85 
+SEQ sp|Q5X1B4|NUOH_LEGPA NADH-quinone oxidoreductase subunit H OS=Leg...  263        2e-85 
+SEQ sp|Q2NA73|NUOH_ERYLH NADH-quinone oxidoreductase subunit H OS=Ery...  263        3e-85 
+SEQ sp|A4G637|NUOH_HERAR NADH-quinone oxidoreductase subunit H OS=Her...  263        3e-85 
+SEQ sp|B0TWQ1|NUOH_FRAP2 NADH-quinone oxidoreductase subunit H OS=Fra...  261        8e-85 
+SEQ sp|B2SEV6|NUOH_FRATM NADH-quinone oxidoreductase subunit H OS=Fra...  261        1e-84 
+SEQ sp|Q8P7T9|NUOH_XANCP NADH-quinone oxidoreductase subunit H OS=Xan...  261        2e-84 
+SEQ sp|Q4UWB1|NUOH_XANC8 NADH-quinone oxidoreductase subunit H OS=Xan...  261        2e-84 
+SEQ sp|A2SFN3|NUOH_METPP NADH-quinone oxidoreductase subunit H OS=Met...  261        2e-84 
+SEQ sp|B0RRA5|NUOH_XANCB NADH-quinone oxidoreductase subunit H OS=Xan...  261        2e-84 
+SEQ sp|Q47HG9|NUOH_DECAR NADH-quinone oxidoreductase subunit H OS=Dec...  261        3e-84 
+SEQ sp|Q01300|NU1M_PETHY NADH-ubiquinone oxidoreductase chain 1 OS=Pe...  259        3e-84 
+SEQ sp|A9II17|NUOH_BORPD NADH-quinone oxidoreductase subunit H OS=Bor...  261        3e-84 
+SEQ sp|Q0A782|NUOH_ALKEH NADH-quinone oxidoreductase subunit H OS=Alk...  259        4e-84 
+SEQ sp|Q2KUZ9|NUOH_BORA1 NADH-quinone oxidoreductase subunit H OS=Bor...  260        5e-84 
+SEQ sp|Q5GXT9|NUOH_XANOR NADH-quinone oxidoreductase subunit H OS=Xan...  260        6e-84 
+SEQ sp|B2SVL2|NUOH_XANOP NADH-quinone oxidoreductase subunit H OS=Xan...  260        6e-84 
+SEQ sp|Q7VZP8|NUOH_BORPE NADH-quinone oxidoreductase subunit H OS=Bor...  259        9e-84 
+SEQ sp|Q7W5B4|NUOH_BORPA NADH-quinone oxidoreductase subunit H OS=Bor...  259        9e-84 
+SEQ sp|Q7WCU6|NUOH_BORBR NADH-quinone oxidoreductase subunit H OS=Bor...  259        9e-84 
+SEQ sp|Q2YA20|NUOH2_NITMU NADH-quinone oxidoreductase subunit H 2 OS=...  259        1e-83 
+SEQ sp|Q3BRN6|NUOH_XANC5 NADH-quinone oxidoreductase subunit H OS=Xan...  259        1e-83 
+SEQ sp|Q8PJ47|NUOH_XANAC NADH-quinone oxidoreductase subunit H OS=Xan...  259        1e-83 
+SEQ sp|Q2P0W2|NUOH_XANOM NADH-quinone oxidoreductase subunit H OS=Xan...  259        1e-83 
+SEQ sp|Q127X9|NUOH_POLSJ NADH-quinone oxidoreductase subunit H OS=Pol...  258        2e-83 
+SEQ sp|A6SY12|NUOH_JANMA NADH-quinone oxidoreductase subunit H OS=Jan...  258        3e-83 
+SEQ sp|Q1GTK6|NUOH_SPHAL NADH-quinone oxidoreductase subunit H OS=Sph...  257        6e-83 
+SEQ sp|Q746T2|NUOH2_GEOSL NADH-quinone oxidoreductase subunit H 2 OS=...  256        7e-83 
+SEQ sp|Q2IWX6|NUOH2_RHOP2 NADH-quinone oxidoreductase subunit H 2 OS=...  256        9e-83 
+SEQ sp|B9JVF3|NUOH_AGRVS NADH-quinone oxidoreductase subunit H OS=Agr...  256        2e-82 
+SEQ sp|Q2GEZ1|NUOH_NEOSM NADH-quinone oxidoreductase subunit H OS=Neo...  255        2e-82 
+SEQ sp|B9JD51|NUOH_AGRRK NADH-quinone oxidoreductase subunit H OS=Agr...  254        5e-82 
+SEQ sp|Q1GZL6|NUOH_METFK NADH-quinone oxidoreductase subunit H OS=Met...  253        2e-81 
+SEQ sp|A7HY42|NUOH_PARL1 NADH-quinone oxidoreductase subunit H OS=Par...  253        2e-81 
+SEQ sp|A1K5B5|NUOH_AZOSB NADH-quinone oxidoreductase subunit H OS=Azo...  253        3e-81 
+SEQ sp|A1WXW0|NUOH_HALHL NADH-quinone oxidoreductase subunit H OS=Hal...  252        3e-81 
+SEQ sp|Q92QP5|NUOH1_RHIME NADH-quinone oxidoreductase subunit H 1 OS=...  252        4e-81 
+SEQ sp|Q9ZZ38|NU1M_TRIRU NADH-ubiquinone oxidoreductase chain 1 OS=Tr...  252        6e-81 
+SEQ sp|Q9PGI8|NUOH_XYLFA NADH-quinone oxidoreductase subunit H OS=Xyl...  252        7e-81 
+SEQ sp|Q87EP8|NUOH_XYLFT NADH-quinone oxidoreductase subunit H OS=Xyl...  252        8e-81 
+SEQ sp|B0U1X2|NUOH_XYLFM NADH-quinone oxidoreductase subunit H OS=Xyl...  252        8e-81 
+SEQ sp|B2I791|NUOH_XYLF2 NADH-quinone oxidoreductase subunit H OS=Xyl...  252        8e-81 
+SEQ sp|Q82TV0|NUOH_NITEU NADH-quinone oxidoreductase subunit H OS=Nit...  252        9e-81 
+SEQ sp|Q6G395|NUOH_BARHE NADH-quinone oxidoreductase subunit H OS=Bar...  251        1e-80 
+SEQ sp|B2JDM1|NUOH_PARP8 NADH-quinone oxidoreductase subunit H OS=Par...  251        2e-80 
+SEQ sp|Q39ZB6|NUOH1_GEOMG NADH-quinone oxidoreductase subunit H 1 OS=...  250        2e-80 
+SEQ sp|Q21YC0|NUOH_RHOFT NADH-quinone oxidoreductase subunit H OS=Rho...  250        6e-80 
+SEQ sp|A9M3D4|NUOH_NEIM0 NADH-quinone oxidoreductase subunit H OS=Nei...  249        7e-80 
+SEQ sp|Q9JX88|NUOH_NEIMA NADH-quinone oxidoreductase subunit H OS=Nei...  249        1e-79 
+SEQ sp|A1KRT0|NUOH_NEIMF NADH-quinone oxidoreductase subunit H OS=Nei...  248        2e-79 
+SEQ sp|Q2G5Z3|NUOH_NOVAD NADH-quinone oxidoreductase subunit H OS=Nov...  248        2e-79 
+SEQ sp|Q135Y3|NUOH2_RHOPS NADH-quinone oxidoreductase subunit H 2 OS=...  248        2e-79 
+SEQ sp|A1USX4|NUOH_BARBK NADH-quinone oxidoreductase subunit H OS=Bar...  248        3e-79 
+SEQ sp|Q8F7Q5|NUOH_LEPIN NADH-quinone oxidoreductase subunit H OS=Lep...  248        3e-79 
+SEQ sp|Q72NT2|NUOH_LEPIC NADH-quinone oxidoreductase subunit H OS=Lep...  248        3e-79 
+SEQ sp|Q9K1B4|NUOH_NEIMB NADH-quinone oxidoreductase subunit H OS=Nei...  247        5e-79 
+SEQ sp|Q2K9S5|NUOH1_RHIEC NADH-quinone oxidoreductase subunit H 1 OS=...  247        6e-79 
+SEQ sp|O99824|NU1M_RHISA NADH-ubiquinone oxidoreductase chain 1 OS=Rh...  246        6e-79 
+SEQ sp|B5ZYM1|NUOH_RHILW NADH-quinone oxidoreductase subunit H OS=Rhi...  246        7e-79 
+SEQ sp|Q5F622|NUOH_NEIG1 NADH-quinone oxidoreductase subunit H OS=Nei...  246        1e-78 
+SEQ sp|Q1MIK7|NUOH_RHIL3 NADH-quinone oxidoreductase subunit H OS=Rhi...  245        2e-78 
+SEQ sp|Q6FZY4|NUOH_BARQU NADH-quinone oxidoreductase subunit H OS=Bar...  244        4e-78 
+SEQ sp|A9IUN6|NUOH_BART1 NADH-quinone oxidoreductase subunit H OS=Bar...  244        5e-78 
+SEQ sp|Q31HF3|NUOH_THICR NADH-quinone oxidoreductase subunit H OS=Thi...  244        6e-78 
+SEQ sp|Q04YB0|NUOH_LEPBL NADH-quinone oxidoreductase subunit H OS=Lep...  243        2e-77 
+SEQ sp|Q04V66|NUOH_LEPBJ NADH-quinone oxidoreductase subunit H OS=Lep...  243        2e-77 
+SEQ sp|B0SP88|NUOH_LEPBP NADH-quinone oxidoreductase subunit H OS=Lep...  243        2e-77 
+SEQ sp|B0SFU0|NUOH_LEPBA NADH-quinone oxidoreductase subunit H OS=Lep...  243        2e-77 
+SEQ sp|Q98KR3|NUOH_RHILO NADH-quinone oxidoreductase subunit H OS=Rhi...  243        2e-77 
+SEQ sp|Q8UFX0|NUOH_AGRFC NADH-quinone oxidoreductase subunit H OS=Agr...  242        3e-77 
+SEQ sp|Q0AHJ3|NUOH_NITEC NADH-quinone oxidoreductase subunit H OS=Nit...  243        4e-77 
+SEQ sp|Q0C1D7|NUOH_HYPNA NADH-quinone oxidoreductase subunit H OS=Hyp...  242        8e-77 
+SEQ sp|Q9A6Y1|NUOH_CAUCR NADH-quinone oxidoreductase subunit H OS=Cau...  241        8e-77 
+SEQ sp|Q11JJ9|NUOH_CHESB NADH-quinone oxidoreductase subunit H OS=Che...  241        1e-76 
+SEQ sp|P19041|NU1M_PODAN NADH-ubiquinone oxidoreductase chain 1 OS=Po...  241        2e-76 
+SEQ sp|A5VAM7|NUOH_SPHWW NADH-quinone oxidoreductase subunit H OS=Sph...  240        3e-76 
+SEQ sp|P42032|NUOH_RHOCA NADH-quinone oxidoreductase subunit H OS=Rho...  239        7e-76 
+SEQ sp|Q74GA1|NUOH1_GEOSL NADH-quinone oxidoreductase subunit H 1 OS=...  238        1e-75 
+SEQ sp|Q37381|NU1M_ACACA NADH-ubiquinone oxidoreductase chain 1 OS=Ac...  238        2e-75 
+SEQ sp|A4YVK3|NUOH_BRASO NADH-quinone oxidoreductase subunit H OS=Bra...  238        3e-75 
+SEQ sp|Q07NL6|NUOH2_RHOP5 NADH-quinone oxidoreductase subunit H 2 OS=...  237        3e-75 
+SEQ sp|Q89KJ5|NUOH_BRADU NADH-quinone oxidoreductase subunit H OS=Bra...  238        3e-75 
+SEQ sp|Q950U8|NU1M_HYACU NADH-ubiquinone oxidoreductase chain 1 OS=Hy...  235        4e-75 
+SEQ sp|Q3A821|NUOH_PELCD NADH-quinone oxidoreductase subunit H OS=Pel...  235        2e-74 
+SEQ sp|Q0APY3|NUOH_MARMM NADH-quinone oxidoreductase subunit H OS=Mar...  236        2e-74 
+SEQ sp|A5EK91|NUOH_BRASB NADH-quinone oxidoreductase subunit H OS=Bra...  236        2e-74 
+SEQ sp|Q39QB4|NUOH2_GEOMG NADH-quinone oxidoreductase subunit H 2 OS=...  234        4e-74 
+SEQ sp|Q215H3|NUOH1_RHOPB NADH-quinone oxidoreductase subunit H 1 OS=...  234        4e-74 
+SEQ sp|Q6N5N1|NUOH1_RHOPA NADH-quinone oxidoreductase subunit H 1 OS=...  234        4e-74 
+SEQ sp|Q2YA99|NUOH1_NITMU NADH-quinone oxidoreductase subunit H 1 OS=...  233        6e-74 
+SEQ sp|Q5LPS7|NUOH_RUEPO NADH-quinone oxidoreductase subunit H OS=Rue...  234        7e-74 
+SEQ sp|A6X1M6|NUOH_OCHA4 NADH-quinone oxidoreductase subunit H OS=Och...  233        1e-73 
+SEQ sp|Q3SRF1|NUOH_NITWN NADH-quinone oxidoreductase subunit H OS=Nit...  233        1e-73 
+SEQ sp|A5VPZ0|NUOH_BRUO2 NADH-quinone oxidoreductase subunit H OS=Bru...  233        1e-73 
+SEQ sp|Q8G1B0|NUOH_BRUSU NADH-quinone oxidoreductase subunit H OS=Bru...  233        2e-73 
+SEQ sp|B0CLD6|NUOH_BRUSI NADH-quinone oxidoreductase subunit H OS=Bru...  233        2e-73 
+SEQ sp|C0RIE6|NUOH_BRUMB NADH-quinone oxidoreductase subunit H OS=Bru...  233        2e-73 
+SEQ sp|A9MAI6|NUOH_BRUC2 NADH-quinone oxidoreductase subunit H OS=Bru...  233        2e-73 
+SEQ sp|Q57DU4|NUOH_BRUAB NADH-quinone oxidoreductase subunit H OS=Bru...  233        2e-73 
+SEQ sp|Q2YNF6|NUOH_BRUA2 NADH-quinone oxidoreductase subunit H OS=Bru...  233        2e-73 
+SEQ sp|Q163R6|NUOH_ROSDO NADH-quinone oxidoreductase subunit H OS=Ros...  232        3e-73 
+SEQ sp|Q1QL92|NUOH_NITHX NADH-quinone oxidoreductase subunit H OS=Nit...  232        4e-73 
+SEQ sp|Q1GIN0|NUOH_RUEST NADH-quinone oxidoreductase subunit H OS=Rue...  232        4e-73 
+SEQ sp|Q8YGK7|NUOH_BRUME NADH-quinone oxidoreductase subunit H OS=Bru...  231        1e-72 
+SEQ sp|Q6MDQ9|NUOH_PARUW NADH-quinone oxidoreductase subunit H OS=Pro...  229        2e-72 
+SEQ sp|Q4K9T0|NUOH_PSEF5 NADH-quinone oxidoreductase subunit H OS=Pse...  229        4e-72 
+SEQ sp|Q9B8D6|NU1M_CANAL NADH-ubiquinone oxidoreductase chain 1 OS=Ca...  228        4e-72 
+SEQ sp|B4RCM1|NUOH_PHEZH NADH-quinone oxidoreductase subunit H OS=Phe...  229        6e-72 
+SEQ sp|Q28T60|NUOH_JANSC NADH-quinone oxidoreductase subunit H OS=Jan...  229        7e-72 
+SEQ sp|Q4QSC6|NQO8_RHOMR NADH-quinone oxidoreductase subunit 8 OS=Rho...  228        8e-72 
+SEQ sp|Q3J3F1|NUOH1_RHOS4 NADH-quinone oxidoreductase subunit H 1 OS=...  228        8e-72 
+SEQ sp|A3PIX8|NUOH1_RHOS1 NADH-quinone oxidoreductase subunit H 1 OS=...  228        9e-72 
+SEQ sp|Q3KA57|NUOH_PSEPF NADH-quinone oxidoreductase subunit H OS=Pse...  228        1e-71 
+SEQ sp|Q8EI35|NUOH_SHEON NADH-quinone oxidoreductase subunit H OS=She...  227        1e-71 
+SEQ sp|A8LIU9|NUOH_DINSH NADH-quinone oxidoreductase subunit H OS=Din...  228        2e-71 
+SEQ sp|C3JY87|NUOH_PSEFS NADH-quinone oxidoreductase subunit H OS=Pse...  227        3e-71 
+SEQ sp|Q3Z7Z7|NUOH_DEHM1 NADH-quinone oxidoreductase subunit H OS=Deh...  227        4e-71 
+SEQ sp|Q3ZXR7|NUOH_DEHMC NADH-quinone oxidoreductase subunit H OS=Deh...  226        5e-71 
+SEQ sp|Q3JC21|NUOH1_NITOC NADH-quinone oxidoreductase subunit H 1 OS=...  225        6e-71 
+SEQ sp|Q88FH1|NUOH_PSEPK NADH-quinone oxidoreductase subunit H OS=Pse...  225        1e-70 
+SEQ sp|A5W186|NUOH_PSEP1 NADH-quinone oxidoreductase subunit H OS=Pse...  225        1e-70 
+SEQ sp|Q96186|NU1M_PECMA NADH-ubiquinone oxidoreductase chain 1 OS=Pe...  226        1e-70 
+SEQ sp|A1B487|NUOH_PARDP NADH-quinone oxidoreductase subunit H OS=Par...  225        1e-70 
+SEQ sp|Q9B6E8|NU1M_YARLI NADH-ubiquinone oxidoreductase chain 1 OS=Ya...  225        2e-70 
+SEQ sp|Q89AU0|NUOH_BUCBP NADH-quinone oxidoreductase subunit H OS=Buc...  224        2e-70 
+SEQ sp|P34847|NU1M_APILI NADH-ubiquinone oxidoreductase chain 1 OS=Ap...  223        2e-70 
+SEQ sp|A4SLN8|NUOH_AERS4 NADH-quinone oxidoreductase subunit H OS=Aer...  224        3e-70 
+SEQ sp|B1J6M8|NUOH_PSEPW NADH-quinone oxidoreductase subunit H OS=Pse...  224        4e-70 
+SEQ sp|B0KMY4|NUOH_PSEPG NADH-quinone oxidoreductase subunit H OS=Pse...  224        4e-70 
+SEQ sp|A0KJ61|NUOH_AERHH NADH-quinone oxidoreductase subunit H OS=Aer...  223        4e-70 
+SEQ sp|A9MJA3|NUOH_SALAR NADH-quinone oxidoreductase subunit H OS=Sal...  223        5e-70 
+SEQ sp|Q60010|NUOH_SALTY NADH-quinone oxidoreductase subunit H OS=Sal...  223        6e-70 
+SEQ sp|C0Q045|NUOH_SALPC NADH-quinone oxidoreductase subunit H OS=Sal...  223        6e-70 
+SEQ sp|A9N586|NUOH_SALPB NADH-quinone oxidoreductase subunit H OS=Sal...  223        6e-70 
+SEQ sp|Q5PN59|NUOH_SALPA NADH-quinone oxidoreductase subunit H OS=Sal...  223        6e-70 
+SEQ sp|B4SYZ3|NUOH_SALNS NADH-quinone oxidoreductase subunit H OS=Sal...  223        6e-70 
+SEQ sp|B5FPG3|NUOH_SALDC NADH-quinone oxidoreductase subunit H OS=Sal...  223        6e-70 
+SEQ sp|Q57M34|NUOH_SALCH NADH-quinone oxidoreductase subunit H OS=Sal...  223        6e-70 
+SEQ sp|B5EZK3|NUOH_SALA4 NADH-quinone oxidoreductase subunit H OS=Sal...  223        6e-70 
+SEQ sp|Q00860|NU1M_MYTED NADH-ubiquinone oxidoreductase chain 1 OS=My...  222        8e-70 
+SEQ sp|Q1I7Z4|NUOH_PSEE4 NADH-quinone oxidoreductase subunit H OS=Pse...  223        1e-69 
+SEQ sp|Q87ZQ3|NUOH_PSESM NADH-quinone oxidoreductase subunit H OS=Pse...  223        1e-69 
+SEQ sp|B9L173|NUOH_THERP NADH-quinone oxidoreductase subunit H OS=The...  223        1e-69 
+SEQ sp|P29920|NQO8_PARDE NADH-quinone oxidoreductase subunit 8 OS=Par...  223        1e-69 
+SEQ sp|Q8Z527|NUOH_SALTI NADH-quinone oxidoreductase subunit H OS=Sal...  222        2e-69 
+SEQ sp|Q4ZRI7|NUOH_PSEU2 NADH-quinone oxidoreductase subunit H OS=Pse...  222        2e-69 
+SEQ sp|Q48H48|NUOH_PSE14 NADH-quinone oxidoreductase subunit H OS=Pse...  222        2e-69 
+SEQ sp|C6DA40|NUOH_PECCP NADH-quinone oxidoreductase subunit H OS=Pec...  221        2e-69 
+SEQ sp|Q6D2S3|NUOH_PECAS NADH-quinone oxidoreductase subunit H OS=Pec...  221        4e-69 
+SEQ sp|A0LEQ2|NUOH1_SYNFM NADH-quinone oxidoreductase subunit H 1 OS=...  221        6e-69 
+SEQ sp|B4EZC4|NUOH_PROMH NADH-quinone oxidoreductase subunit H OS=Pro...  219        1e-68 
+SEQ sp|A4FPT4|NUOH_SACEN NADH-quinone oxidoreductase subunit H OS=Sac...  223        2e-68 
+SEQ sp|Q2RYV5|NUOH_SALRD NADH-quinone oxidoreductase subunit H OS=Sal...  220        2e-68 
+SEQ sp|Q1R9D5|NUOH_ECOUT NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|Q8FFK0|NUOH_ECOL6 NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|Q0TFG4|NUOH_ECOL5 NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|A1ADD0|NUOH_ECOK1 NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B7MXW1|NUOH_ECO81 NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B7MG46|NUOH_ECO45 NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|Q3YZS8|NUOH_SHISS NADH-quinone oxidoreductase subunit H OS=Shi...  219        2e-68 
+SEQ sp|Q32DQ7|NUOH_SHIDS NADH-quinone oxidoreductase subunit H OS=Shi...  219        2e-68 
+SEQ sp|Q31YH9|NUOH_SHIBS NADH-quinone oxidoreductase subunit H OS=Shi...  219        2e-68 
+SEQ sp|B2TW63|NUOH_SHIB3 NADH-quinone oxidoreductase subunit H OS=Shi...  219        2e-68 
+SEQ sp|B1LLN5|NUOH_ECOSM NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B6I7N2|NUOH_ECOSE NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B7N5P4|NUOH_ECOLU NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|P0AFD4|NUOH_ECOLI NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B1IXR0|NUOH_ECOLC NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|A8A2F1|NUOH_ECOHS NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B1X8Z4|NUOH_ECODH NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|C4ZUC5|NUOH_ECOBW NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B7M5W1|NUOH_ECO8A NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B5YXS2|NUOH_ECO5E NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|P0AFD5|NUOH_ECO57 NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B7LAU4|NUOH_ECO55 NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B7UFU0|NUOH_ECO27 NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|A7ZP96|NUOH_ECO24 NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|B7NNW1|NUOH_ECO7I NADH-quinone oxidoreductase subunit H OS=Esc...  219        2e-68 
+SEQ sp|Q60019|NQO8_THET8 NADH-quinone oxidoreductase subunit 8 OS=The...  220        2e-68 
+SEQ sp|A4XV08|NUOH_PSEMY NADH-quinone oxidoreductase subunit H OS=Pse...  218        5e-68 
+SEQ sp|A1SE34|NUOH_NOCSJ NADH-quinone oxidoreductase subunit H OS=Noc...  221        6e-68 
+SEQ sp|B7LM50|NUOH_ESCF3 NADH-quinone oxidoreductase subunit H OS=Esc...  218        7e-68 
+SEQ sp|Q1QST8|NUOH_CHRSD NADH-quinone oxidoreductase subunit H OS=Chr...  218        9e-68 
+SEQ sp|Q83QS9|NUOH_SHIFL NADH-quinone oxidoreductase subunit H OS=Shi...  217        1e-67 
+SEQ sp|Q0T2K5|NUOH_SHIF8 NADH-quinone oxidoreductase subunit H OS=Shi...  217        1e-67 
+SEQ sp|C1DL20|NUOH_AZOVD NADH-quinone oxidoreductase subunit H OS=Azo...  217        1e-67 
+SEQ sp|A6TBW8|NUOH_KLEP7 NADH-quinone oxidoreductase subunit H OS=Kle...  217        2e-67 
+SEQ sp|B5XNW0|NUOH_KLEP3 NADH-quinone oxidoreductase subunit H OS=Kle...  217        2e-67 
+SEQ sp|C0Z769|NUOH_BREBN NADH-quinone oxidoreductase subunit H OS=Bre...  217        2e-67 
+SEQ sp|A4ITI3|NUOH_GEOTN NADH-quinone oxidoreductase subunit H OS=Geo...  217        2e-67 
+SEQ sp|Q2RJU3|NUOH_MOOTA NADH-quinone oxidoreductase subunit H OS=Moo...  217        2e-67 
+SEQ sp|A7MPB4|NUOH_CROS8 NADH-quinone oxidoreductase subunit H OS=Cro...  216        3e-67 
+SEQ sp|Q669A6|NUOH_YERPS NADH-quinone oxidoreductase subunit H OS=Yer...  216        3e-67 
+SEQ sp|A4TM30|NUOH_YERPP NADH-quinone oxidoreductase subunit H OS=Yer...  216        3e-67 
+SEQ sp|Q1CHQ7|NUOH_YERPN NADH-quinone oxidoreductase subunit H OS=Yer...  216        3e-67 
+SEQ sp|A9R6L5|NUOH_YERPG NADH-quinone oxidoreductase subunit H OS=Yer...  216        3e-67 
+SEQ sp|Q8ZDL3|NUOH_YERPE NADH-quinone oxidoreductase subunit H OS=Yer...  216        3e-67 
+SEQ sp|B2K815|NUOH_YERPB NADH-quinone oxidoreductase subunit H OS=Yer...  216        3e-67 
+SEQ sp|Q1C6B5|NUOH_YERPA NADH-quinone oxidoreductase subunit H OS=Yer...  216        3e-67 
+SEQ sp|A7FGR0|NUOH_YERP3 NADH-quinone oxidoreductase subunit H OS=Yer...  216        3e-67 
+SEQ sp|A6V4E2|NUOH_PSEA7 NADH-quinone oxidoreductase subunit H OS=Pse...  216        5e-67 
+SEQ sp|B7GME7|NUOH_ANOFW NADH-quinone oxidoreductase subunit H OS=Ano...  216        5e-67 
+SEQ sp|A4TDB2|NUOH_MYCGI NADH-quinone oxidoreductase subunit H OS=Myc...  218        6e-67 
+SEQ sp|Q9I0J5|NUOH_PSEAE NADH-quinone oxidoreductase subunit H OS=Pse...  216        6e-67 
+SEQ sp|Q02ND5|NUOH_PSEAB NADH-quinone oxidoreductase subunit H OS=Pse...  216        6e-67 
+SEQ sp|B7VAQ9|NUOH_PSEA8 NADH-quinone oxidoreductase subunit H OS=Pse...  216        6e-67 
+SEQ sp|A8ADV7|NUOH_CITK8 NADH-quinone oxidoreductase subunit H OS=Cit...  215        7e-67 
+SEQ sp|A4WCR1|NUOH_ENT38 NADH-quinone oxidoreductase subunit H OS=Ent...  215        7e-67 
+SEQ sp|A0LJM4|NUOH2_SYNFM NADH-quinone oxidoreductase subunit H 2 OS=...  215        7e-67 
+SEQ sp|B1JGL9|NUOH_YERPY NADH-quinone oxidoreductase subunit H OS=Yer...  215        9e-67 
+SEQ sp|A1JLH7|NUOH_YERE8 NADH-quinone oxidoreductase subunit H OS=Yer...  214        1e-66 
+SEQ sp|Q608Y3|NUOH_METCA NADH-quinone oxidoreductase subunit H OS=Met...  214        1e-66 
+SEQ sp|P11658|NU1M_CHLRE NADH-ubiquinone oxidoreductase chain 1 OS=Ch...  213        2e-66 
+SEQ sp|Q1LT95|NUOH_BAUCH NADH-quinone oxidoreductase subunit H OS=Bau...  214        2e-66 
+SEQ sp|Q72GD5|NUOH_THET2 NADH-quinone oxidoreductase subunit H OS=The...  215        2e-66 
+SEQ sp|A0QU29|NUOH_MYCS2 NADH-quinone oxidoreductase subunit H OS=Myc...  216        2e-66 
+SEQ sp|Q0S443|NUOH_RHOJR NADH-quinone oxidoreductase subunit H OS=Rho...  217        3e-66 
+SEQ sp|A1T699|NUOH_MYCVP NADH-quinone oxidoreductase subunit H OS=Myc...  216        3e-66 
+SEQ sp|Q8K9Y1|NUOH_BUCAP NADH-quinone oxidoreductase subunit H OS=Buc...  213        3e-66 
+SEQ sp|Q6FE65|NUOH_ACIAD NADH-quinone oxidoreductase subunit H OS=Aci...  214        4e-66 
+SEQ sp|Q9EV66|NUOH2_RHIME NADH-quinone oxidoreductase subunit H 2 OS=...  213        4e-66 
+SEQ sp|Q7VRV8|NUOH_BLOFL NADH-quinone oxidoreductase subunit H OS=Blo...  213        4e-66 
+SEQ sp|A0LRI8|NUOH_ACIC1 NADH-quinone oxidoreductase subunit H OS=Aci...  216        5e-66 
+SEQ sp|Q492I2|NUOH_BLOPB NADH-quinone oxidoreductase subunit H OS=Blo...  212        8e-66 
+SEQ sp|P08774|NU1M_NEUCR NADH-ubiquinone oxidoreductase chain 1 OS=Ne...  214        1e-65 
+SEQ sp|A3PWR4|NUOH_MYCSJ NADH-quinone oxidoreductase subunit H OS=Myc...  215        1e-65 
+SEQ sp|Q5KUJ9|NUOH_GEOKA NADH-quinone oxidoreductase subunit H OS=Geo...  212        1e-65 
+SEQ sp|Q1BBQ0|NUOH_MYCSS NADH-quinone oxidoreductase subunit H OS=Myc...  214        1e-65 
+SEQ sp|A1UD97|NUOH_MYCSK NADH-quinone oxidoreductase subunit H OS=Myc...  214        1e-65 
+SEQ sp|B2VIV9|NUOH_ERWT9 NADH-quinone oxidoreductase subunit H OS=Erw...  211        2e-65 
+SEQ sp|C5B8I0|NUOH_EDWI9 NADH-quinone oxidoreductase subunit H OS=Edw...  211        2e-65 
+SEQ sp|A7GV47|NUOH_BACCN NADH-quinone oxidoreductase subunit H OS=Bac...  211        3e-65 
+SEQ sp|Q9RU94|NUOH_DEIRA NADH-quinone oxidoreductase subunit H OS=Dei...  213        5e-65 
+SEQ sp|C5D984|NUOH_GEOSW NADH-quinone oxidoreductase subunit H OS=Geo...  210        6e-65 
+SEQ sp|A8GH10|NUOH_SERP5 NADH-quinone oxidoreductase subunit H OS=Ser...  209        1e-64 
+SEQ sp|Q82DX4|NUOH_STRAW NADH-quinone oxidoreductase subunit H OS=Str...  213        1e-64 
+SEQ sp|Q73V08|NUOH_MYCPA NADH-quinone oxidoreductase subunit H OS=Myc...  211        2e-64 
+SEQ sp|A0QJV4|NUOH_MYCA1 NADH-quinone oxidoreductase subunit H OS=Myc...  211        3e-64 
+SEQ sp|Q9XAR1|NUOH_STRCO NADH-quinone oxidoreductase subunit H OS=Str...  212        5e-64 
+SEQ sp|Q1IS40|NUOH2_KORVE NADH-quinone oxidoreductase subunit H 2 OS=...  208        1e-63 
+SEQ sp|Q1AVI7|NUOH_RUBXD NADH-quinone oxidoreductase subunit H OS=Rub...  207        1e-63 
+SEQ sp|Q3AC81|NUOH_CARHZ NADH-quinone oxidoreductase subunit H OS=Car...  207        1e-63 
+SEQ sp|A3M2Q4|NUOH_ACIBT NADH-quinone oxidoreductase subunit H OS=Aci...  207        1e-63 
+SEQ sp|A9VS94|NUOH_BACWK NADH-quinone oxidoreductase subunit H OS=Bac...  207        1e-63 
+SEQ sp|Q11VB9|NUOH1_CYTH3 NADH-quinone oxidoreductase subunit H 1 OS=...  207        2e-63 
+SEQ sp|P9WIX1|NUOH_MYCTU NADH-quinone oxidoreductase subunit H OS=Myc...  209        2e-63 
+SEQ sp|P9WIX0|NUOH_MYCTO NADH-quinone oxidoreductase subunit H OS=Myc...  209        2e-63 
+SEQ sp|A5U7G8|NUOH_MYCTA NADH-quinone oxidoreductase subunit H OS=Myc...  209        2e-63 
+SEQ sp|C1AGR9|NUOH_MYCBT NADH-quinone oxidoreductase subunit H OS=Myc...  209        2e-63 
+SEQ sp|A1KNE8|NUOH_MYCBP NADH-quinone oxidoreductase subunit H OS=Myc...  209        2e-63 
+SEQ sp|P65562|NUOH_MYCBO NADH-quinone oxidoreductase subunit H OS=Myc...  209        2e-63 
+SEQ sp|A5WG42|NUOH_PSYWF NADH-quinone oxidoreductase subunit H OS=Psy...  207        2e-63 
+SEQ sp|C1D0H8|NUOH_DEIDV NADH-quinone oxidoreductase subunit H OS=Dei...  208        2e-63 
+SEQ sp|A9RAG3|NU1M_DEBHA NADH-ubiquinone oxidoreductase chain 1 OS=De...  205        3e-63 
+SEQ sp|Q2NSK5|NUOH_SODGM NADH-quinone oxidoreductase subunit H OS=Sod...  205        4e-63 
+SEQ sp|A0PR45|NUOH_MYCUA NADH-quinone oxidoreductase subunit H OS=Myc...  208        4e-63 
+SEQ sp|Q630V2|NUOH_BACCZ NADH-quinone oxidoreductase subunit H OS=Bac...  206        5e-63 
+SEQ sp|B9IRS8|NUOH_BACCQ NADH-quinone oxidoreductase subunit H OS=Bac...  206        5e-63 
+SEQ sp|B7HY54|NUOH_BACC7 NADH-quinone oxidoreductase subunit H OS=Bac...  206        5e-63 
+SEQ sp|C1F0L9|NUOH_BACC3 NADH-quinone oxidoreductase subunit H OS=Bac...  206        5e-63 
+SEQ sp|Q72XF7|NUOH_BACC1 NADH-quinone oxidoreductase subunit H OS=Bac...  206        5e-63 
+SEQ sp|B7JGM1|NUOH_BACC0 NADH-quinone oxidoreductase subunit H OS=Bac...  206        5e-63 
+SEQ sp|Q81K04|NUOH_BACAN NADH-quinone oxidoreductase subunit H OS=Bac...  206        5e-63 
+SEQ sp|A0RL87|NUOH_BACAH NADH-quinone oxidoreductase subunit H OS=Bac...  206        5e-63 
+SEQ sp|C3LFH0|NUOH_BACAC NADH-quinone oxidoreductase subunit H OS=Bac...  206        5e-63 
+SEQ sp|C3P1E5|NUOH_BACAA NADH-quinone oxidoreductase subunit H OS=Bac...  206        5e-63 
+SEQ sp|Q6HAY9|NUOH_BACHK NADH-quinone oxidoreductase subunit H OS=Bac...  205        5e-63 
+SEQ sp|Q814X0|NUOH_BACCR NADH-quinone oxidoreductase subunit H OS=Bac...  205        6e-63 
+SEQ sp|B7HFJ2|NUOH_BACC4 NADH-quinone oxidoreductase subunit H OS=Bac...  205        6e-63 
+SEQ sp|B7IQU9|NUOH_BACC2 NADH-quinone oxidoreductase subunit H OS=Bac...  205        6e-63 
+SEQ sp|P48897|NU1M_ALBCA NADH-ubiquinone oxidoreductase chain 1 OS=Al...  203        1e-62 
+SEQ sp|Q6ANM8|NUOH_DESPS NADH-quinone oxidoreductase subunit H OS=Des...  204        1e-62 
+SEQ sp|Q67P15|NUOH1_SYMTH NADH-quinone oxidoreductase subunit H 1 OS=...  203        2e-62 
+SEQ sp|Q1IZW6|NUOH_DEIGD NADH-quinone oxidoreductase subunit H OS=Dei...  205        3e-62 
+SEQ sp|Q2K3T6|NUOH2_RHIEC NADH-quinone oxidoreductase subunit H 2 OS=...  203        5e-62 
+SEQ sp|Q47LF1|NUOH_THEFY NADH-quinone oxidoreductase subunit H OS=The...  206        8e-62 
+SEQ sp|Q4FU58|NUOH_PSYA2 NADH-quinone oxidoreductase subunit H OS=Psy...  202        1e-61 
+SEQ sp|Q1QD91|NUOH_PSYCK NADH-quinone oxidoreductase subunit H OS=Psy...  202        2e-61 
+SEQ sp|Q7N2J3|NUOH_PHOLL NADH-quinone oxidoreductase subunit H OS=Pho...  201        2e-61 
+SEQ sp|Q5YWD4|NUOHI_NOCFA NADH-quinone oxidoreductase subunits H/I OS...  207        5e-61 
+SEQ sp|A3PKI6|NUOH2_RHOS1 NADH-quinone oxidoreductase subunit H 2 OS=...  200        5e-61 
+SEQ sp|Q64Y09|NUOH_BACFR NADH-quinone oxidoreductase subunit H OS=Bac...  201        6e-61 
+SEQ sp|Q5LH51|NUOH_BACFN NADH-quinone oxidoreductase subunit H OS=Bac...  201        6e-61 
+SEQ sp|Q3J1Q3|NUOH2_RHOS4 NADH-quinone oxidoreductase subunit H 2 OS=...  199        8e-61 
+SEQ sp|P57258|NUOH_BUCAI NADH-quinone oxidoreductase subunit H OS=Buc...  199        1e-60 
+SEQ 
+SEQ 
+NALIGN	501
+## SEQUENCE PROFILE AND ENTROPY
+ SeqNo PDBNo   V   L   I   M   F   W   Y   G   A   P   S   T   C   H   R   K   Q   E   N   D  NOCC NDEL NINS ENTROPY RELENT WEIGHT
+    1    1     1  43   4  52   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   156    0    0   0.874     28  0.00
+    2    2     4   7   8   1  33   0   5   0   0   4   9  26   0   1   0   0   1   2   1   0   182    0    0   1.933     63  0.00
+    3    3    12  36  28  15   5   0   0   0   0   0   0   4   0   0   0   0   0   0   0   0   217    0    0   1.539     50  0.00
+    4    4    14  32  36   4   1   0   0   3   6   0   0   5   0   0   0   0   0   0   0   0   235    0    0   1.577     51  0.00
+    5    5     0   0   0   1   0   0   0   0   0   0   0   0   0   0   8  44   2   0  43   0   236    0    0   1.166     38  0.00
+    6    6    11  19  29   1   0   0   0   0  27   6   3   3   0   0   0   0   0   0   0   0   236    0    0   1.727     56  0.00
+    7    7    37  53   6   1   1   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   237    0    0   1.083     35  0.00
+    8    8    28  17   5   5   3   0   0   3  21   0   6   7   6   0   0   0   0   0   0   0   237    0    0   1.994     65  0.00
+    9    9    16  25  36   4   0   0  15   0   0   0   0   3   1   0   0   0   0   0   0   0   237    0    0   1.602     52  0.00
+   10   10     9  25  43   3   5   0   0   0   8   0   0   7   0   0   0   0   0   0   0   0   237    0    0   1.588     52  0.00
+   11   11    31  29  31   2   0   0   0   0   5   0   0   1   0   0   0   0   0   0   0   0   237    0    0   1.411     46  0.00
+   12   12    25   0   0   0   5   0   0   2   0  62   4   0   1   0   0   0   0   0   0   0   241    0    0   1.092     35  0.00
+   13   13    32  21  43   1   0   0   0   0   2   0   0   1   0   0   0   0   0   0   0   0   243    0    0   1.216     39  0.00
+   14   14    23  59   8   9   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   243    0    0   1.075     35  0.00
+   15   15     5  56  12   0   1   0   0   6   0   0   0  19   0   0   0   0   0   0   0   0   245    0    0   1.317     43  0.00
+   16   16     0   0   1   1   0   0   0   2  51   0   6   4  36   0   0   0   0   0   0   0   246    0    0   1.163     38  0.00
+   17   17    65   0   1  10   0   0   0  20   0   1   0   2   0   0   0   0   0   0   0   0   249    0    0   1.030     33  0.00
+   18   18     0   4   0   0   0   0   0   0  95   0   0   1   0   0   0   0   0   0   0   0   250    0    0   0.226      7  0.00
+   19   19     1   0   0   0  67   0  30   0   2   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.803     26  0.00
+   20   20     0  73   0  21   0   0   0   0   4   0   1   1   0   0   0   0   0   0   0   0   250    0    0   0.787     25  0.00
+   21   21     6   0  12   3   0   0   0   0   0   0  20  59   0   0   0   0   0   0   0   0   250    0    0   1.156     37  0.00
+   22   22     1  61   0   2  21   1  15   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.084     35  0.00
+   23   23    23   7   9   4   2  14   0  19  18   0   0   6   0   0   0   0   0   0   0   0   250    0    0   1.985     65  0.00
+   24   24     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   250    0    0   0.026      0  0.00
+   25   25     0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   250    0    0   0.000      0  0.00
+   26   26     0   0   0   0   0   0   0   0   0   0   0   0   0   0  27  73   0   0   0   0   250    0    0   0.588     19  0.00
+   27   27    40  31  20   4   0   0   0   0   3   0   0   2   0   0   0   0   0   0   0   0   250    0    0   1.401     46  0.00
+   28   28     2  68  27   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.812     26  0.00
+   29   29     0   0   0   0   0   0   0  88  10   0   1   0   0   0   0   0   0   0   0   0   250    0    0   0.396     13  0.00
+   30   30     0  25   0   0   5  12  47   0   6   0   1   0   0   2   3   0   0   0   0   0   250    0    0   1.485     48  0.00
+   31   31     2   0   6  70  19   1   0   0   0   0   0   2   0   0   0   0   0   0   0   0   250    0    0   0.968     31  0.00
+   32   32     0   0   0   0   0   0   0   0   0   0   0   0   0  10   0   0  89   0   0   0   250    0    0   0.358     11  0.00
+   33   33    16  42   2   2  10   0   0   1   2   0   0   0   0   2   2   1   0   0  18   2   250    0    0   1.760     57  0.00
+   34   34     0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   250    0    0   0.000      0  0.00
+   35   35     3  10   6   0   2   0  20   0   0   1   0   0   1   4   4  47   2   0   0   0   250    0    0   1.702     55  0.00
+   36   36     0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+   37   37     0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+   38   38     0   0   0   1   0   0   0   0   0   0   4   2   0   0   0   0   0   0  92   2   250    0    0   0.388     12  0.00
+   39   39    24   1  30   1   0   0   0   0   0   0   0   1   0   0  43   0   0   0   0   0   250    0    0   1.195     39  0.00
+   40   40    93   0   1   0   0   0   0   0   1   0   0   4   0   1   0   0   0   0   0   0   250    0    0   0.355     11  0.00
+   41   41     0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.026      0  0.00
+   42   42     1   2   1   0   3  19   1   0   0  71   2   0   0   0   0   0   0   0   0   0   250    0    0   0.951     31  0.00
+   43   43     0   2   0   2  19   4  34  19   6   0   0   0   0   6   2   5   1   0   0   0   250    0    0   1.939     63  0.00
+   44   44     0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+   45   45     0  74   3   3   0   0   0   0   0   0  20   0   0   0   0   0   0   0   0   0   250    0    0   0.809     26  0.00
+   46   46     0  98   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.143      4  0.00
+   47   47     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   250    0    0   0.026      0  0.00
+   48   48     0  20   0   0   0   0   0   0   0  74   6   0   0   0   0   0   0   0   0   0   250    0    0   0.727     23  0.00
+   49   49    21  10  50   1  18   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.297     42  0.00
+   50   50     0   0   0   0   0   0   0   0  99   0   1   0   0   0   0   0   0   0   0   0   250    0    0   0.072      2  0.00
+   51   51     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   250    0    0   0.000      0  0.00
+   52   52    10   2   0  20   0   0   0  21  47   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.329     43  0.00
+   53   53    27  25  37   7   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.376     45  0.00
+   54   54     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   250    0    0   0.000      0  0.00
+   55   55     0  78   0  21   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.566     18  0.00
+   56   56     2  22   6   2  65   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.050     34  0.00
+   57   57     2  16  19   3  28   0   0   0   0   0   0  31   0   0   0   0   0   0   0   0   250    0    0   1.547     50  0.00
+   58   58     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   250    0    0   0.000      0  0.00
+   59   59     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   250    0    0   0.000      0  0.00
+   60   60    10   1   7   0   0   0   0   2   0  51   1   3   0   1   0   0   0   1   0  22   250    0    0   1.488     48  0.00
+   61   61    10  32  32   4   0  20   0   0   0   0   1   0   0   0   0   0   0   0   0   0   250    0    0   1.497     49  0.00
+   62   62    10   4  32   1   0   1   1   0   0   0   2   2   0   2  32   4   8   0   0   0   250    0    0   1.829     60  0.00
+   63   63     1   0   0   0   0   0   0   0   0  99   0   0   0   0   0   0   0   0   0   0   250    0    0   0.046      1  0.00
+   64   64     0  24   0   1   3   0   0   0  12   2  20  16   0   0   1  18   1   0   1   0   250    0    0   1.988     65  0.00
+   65   65     0   1   0   1  20   0   0   6  10   0   5  38   0   1   3   4   4   0   7   0   250    0    0   1.977     64  0.00
+   66   66     4   0   1   0   0   0   0   0  29   0  63   4   0   0   0   0   0   0   0   0   250    0    0   0.947     31  0.00
+   67   67     0   0   0   0   0   0   0   0   1   0  49   4   0   0   1   0   0   0  13  31   250    0    0   1.228     40  0.00
+   68   68     2   1  10   2   2   0   0   0   1  10   2   8   0   0  31  28   0   0   0   0   250    0    0   1.891     62  0.00
+   69   69    22   8  12   2  10   7   3   6   3   2  13  10   0   0   1   1   0   0   0   0   250    0    0   2.341     76  0.00
+   70   70     4  43  25  25   0   0   0   0   2   0   0   0   2   0   0   0   0   0   0   0   250    0    0   1.336     43  0.00
+   71   71     0   2   0   0  80   0  18   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.564     18  0.00
+   72   72     9  18  41   2   2   0   1   0   0   0   0  25   0   0   2   0   0   0   0   0   250    0    0   1.493     49  0.00
+   73   73     8  45  29   7   0   0   0   0   5   0   0   4   0   0   0   0   0   0   0   0   250    0    0   1.434     47  0.00
+   74   74     0   0   0   0   0   0   0   4  88   0   3   5   0   0   0   0   0   0   0   0   249    0    0   0.509     16  0.00
+   75   75     0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+   76   76    20   6  30  27   0   0   0   0   2   0   0  14   0   0   0   0   0   0   0   0   250    0    0   1.594     52  0.00
+   77   77     4  46  32  15   2   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.264     41  0.00
+   78   78     3   0   0   0   0   0   0   0  69   0   5  23   0   0   0   0   0   0   0   0   250    0    0   0.850     27  0.00
+   79   79     8  46   6   1  37   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.222     40  0.00
+   80   80    10   2  10  10   1   0   0   2   6   0   9  51   0   0   0   0   0   0   0   0   250    0    0   1.598     52  0.00
+   81   81     0  47   7   1   0   0   0   0   2  23  19   2   0   0   0   0   0   0   0   0   250    0    0   1.366     44  0.00
+   82   82     0  18   0   1   1   0   0   0  71   0  10   0   0   0   0   0   0   0   0   0   250    0    0   0.870     28  0.00
+   83   83     2  79   2   5  11   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.763     25  0.00
+   84   84     6  31   9   4   0   0   0   0  16   0   6  27   1   0   0   0   0   0   0   0   250    0    0   1.735     56  0.00
+   85   85     8  13  12  18   0   0   0  10  32   0   6   1   0   0   0   0   0   0   0   0   250    0    0   1.837     60  0.00
+   86   86     0   0   1   0  25  74   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.628     20  0.00
+   87   87     6   1  14   2   0   0   0   0  61   0   2  14   0   0   0   0   0   0   0   0   250    0    0   1.260     41  0.00
+   88   88    37   0  19   0   0   0   0   0   0  42   0   0   0   0   0   0   0   0   0   0   250    0    0   1.114     36  0.00
+   89   89    27  33  34   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.247     40  0.00
+   90   90     0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+   91   91    19   6   4  39  32   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.365     44  0.00
+   92   92     0   0   0   0   0   0   0  20   5  43  20   3   0   0   0   0   4   0   1   4   250    0    0   1.567     51  0.00
+   93   93     1   2   1   0   2   0  20   2  11  28   2   1   0  15   0   5   1   3   5   2   249    0    0   2.142     70  0.00
+   94   94     5   0   0   0   0   0   1  22   7  32   6   9   0   0   0   0   5   8   4   2   250    0    0   2.046     67  0.00
+   95   95     4  63   6   4   0  22   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.118     36  0.00
+   96   96    31   3  26   2   0   0   0   1  27   0   2  10   0   0   0   0   0   0   0   0   250    0    0   1.561     51  0.00
+   97   97     0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  45  52   250    0    0   0.824     27  0.00
+   98   98     9  53  20  16   2   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   250    0    0   1.304     42  0.00
+   99   99     0   0   0   0   0   0   0   0   1   3   0   0   0   0   1   0   0   0  94   0   250    0    0   0.303      9  0.00
+  100  100    14  41  26   2   0   0   0   0  18   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.357     44  0.00
+  101  101     0   0   0   0   0   0   0  89   5   0   6   1   0   0   0   0   0   0   0   0   250    0    0   0.450     14  0.00
+  102  102    31  37  29   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.220     40  0.00
+  103  103     0 100   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.026      0  0.00
+  104  104     1   2   0   0  65   0  31   0   0   0   2   0   0   0   0   0   0   0   0   0   250    0    0   0.828     27  0.00
+  105  105    10   9  43  12  19   0   0   0   5   0   0   1   0   0   0   0   0   0   0   0   250    0    0   1.600     52  0.00
+  106  106     0  79   0  15   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.656     21  0.00
+  107  107     0   0   0  19   0   0   0   0  76   0   4   0   0   0   0   0   0   0   0   0   250    0    0   0.703     23  0.00
+  108  108     8  15  32  37   0   0   0   0   1   0   0   7   0   0   0   0   0   0   0   0   250    0    0   1.453     47  0.00
+  109  109     0   0   0   0   0   0   0   0  22   0  67  11   0   0   0   0   0   0   0   0   250    0    0   0.870     28  0.00
+  110  110     0   0   0   0   0   0   0  27   0   0  73   0   0   0   0   0   0   0   0   0   250    0    0   0.609     19  0.00
+  111  111     5  77  12   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.781     25  0.00
+  112  112     0   0   0   1   0   0   0  27  49   0  14   4   0   0   0   0   0   5   0   0   250    0    0   1.313     43  0.00
+  113  113    98   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.117      3  0.00
+  114  114     0   0   0   0   0   0  98   0   0   0   0   0   0   0   0   0   0   0   2   0   250    0    0   0.124      4  0.00
+  115  115     0   0   0   0   0   0   0  33  28   0  36   2   0   0   0   0   0   0   0   0   250    0    0   1.202     39  0.00
+  116  116    37   1  61   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   250    0    0   0.763     25  0.00
+  117  117     5  64  29   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.875     28  0.00
+  118  118     3  14  16   3  20  37   0   6   0   0   0   1   0   0   0   0   0   0   0   0   250    0    0   1.680     55  0.00
+  119  119     0   0   0   0   0   0   0   1  56   0  43   0   0   0   0   0   0   0   0   0   250    0    0   0.741     24  0.00
+  120  120     0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+  121  121     0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+  122  122     0   0   0   0   0   0   0   0  73   0  27   0   0   0   0   0   0   0   0   0   250    0    0   0.609     19  0.00
+  123  123     0   0   0   0   0   0   0   0   0   0  99   0   0   0   0   0   0   0   0   0   250    0    0   0.078      2  0.00
+  124  124     0   0   0   0   0   0   0   5   0   0   0   0   0   0   0   0   0   0  94   0   250    0    0   0.230      7  0.00
+  125  125     0   0   0   0   0   0   0   0   0   0  79   1   0   0   0   0   0   0  20   0   250    0    0   0.569     18  0.00
+  126  126     0   0   0   0   0   0   0   0   0   1   0   3   0   0   0  87   0   0   8   0   250    0    0   0.513     16  0.00
+  127  127     0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+  128  128     0   0   0   0   0   0   0   0  71   6  22   0   0   0   0   0   0   0   0   0   250    0    0   0.751     24  0.00
+  129  129     0  69   0   2  29   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.707     23  0.00
+  130  130     1  55  37   3   3   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   250    0    0   1.021     33  0.00
+  131  131     0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+  132  132     0   0   0   0   0   0   0   7  87   0   5   1   0   0   0   0   0   0   0   0   250    0    0   0.517     16  0.00
+  133  133     2  57  10  30   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.016     33  0.00
+  134  134     0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   250    0    0   0.000      0  0.00
+  135  135     0   0   0   0   0   0   0   0  77   0  22   0   0   0   0   0   0   0   0   0   250    0    0   0.556     18  0.00
+  136  136    43   0   0   0   0   0   0   0  19   0  34   3   1   0   0   0   0   0   0   0   250    0    0   1.206     39  0.00
+  137  137     0   0   0   0   0   0   0   0  97   0   3   0   0   0   0   0   0   0   0   0   250    0    0   0.127      4  0.00
+  138  138     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   250    0    0   0.000      0  0.00
+  139  139     5   0   2  30   0   0   0   0   0   0   0  63   0   0   0   0   0   0   0   0   250    0    0   0.883     29  0.00
+  140  140    28  15  57   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.957     31  0.00
+  141  141     0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   250    0    0   0.026      0  0.00
+  142  142     0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+  143  143     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   250    0    0   0.026      0  0.00
+  144  144    75   5  19   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.739     24  0.00
+  145  145     0   0   0   0  20   0   0   0  18   0  27  35   0   0   0   0   0   0   0   0   250    0    0   1.353     44  0.00
+  146  146     0  59  10  29   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.960     31  0.00
+  147  147     0   0   0   0   0   0   0  62  36   0   1   1   0   0   0   0   0   0   0   0   250    0    0   0.755     24  0.00
+  148  148     0  44  34   0  19   0   0   0   1   0   0   1   0   0   0   0   0   0   0   0   250    0    0   1.179     38  0.00
+  149  149     9   0  47   0   0   0   0   0  14   0  25   2   3   0   0   0   0   0   0   0   250    0    0   1.389     45  0.00
+  150  150     1  78  14   1   5   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   250    0    0   0.744     24  0.00
+  151  151    21  44  12  20   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.406     46  0.00
+  152  152     3   4   1   0   0   0   0  24   4   1  44  14   3   0   0   0   0   0   1   0   250    0    0   1.637     53  0.00
+  153  153    73   3  15   3   0   0   0   0   0   0   0   6   0   0   0   0   0   0   0   0   250    0    0   0.927     30  0.00
+  154  154    24  51  10  10   5   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.384     45  0.00
+  155  155     1  48  12  21   0   0   0   0  19   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.285     42  0.00
+  156  156    10   9   8  22   5   0   4   0   4   0   1  13   5   0   0   0  20   0   0   0   250    0    0   2.191     71  0.00
+  157  157     4   0   0   0   0   0   0   0  33   0  26  15   0   0   0   0   0   0  22   0   250    0    0   1.494     49  0.00
+  158  158     0   0   0   0   0   0   0  97   1   0   0   0   0   0   0   0   1   1   0   0   250    0    0   0.183      6  0.00
+  159  159     0   0   0   0   0   0   0   8   0   0  80  10   0   0   0   0   0   1   1   0   250    0    0   0.701     23  0.00
+  160  160     0  27   0   8  56   0   7   0   0   0   0   0   2   0   0   0   0   0   0   0   250    0    0   1.157     38  0.00
+  161  161     0   0   0   0   0   0   0   0   1   0   9  33   0   0   1   2   0   0  53   1   250    0    0   1.125     36  0.00
+  162  162     0  70   1  23   1   0   0   0   0   0   0   4   0   0   0   0   0   0   0   0   250    0    0   0.870     28  0.00
+  163  163     1   1   1   0   0   0   0   4   0   2  42  29   0   1   2   6   9   0   2   0   250    0    0   1.692     55  0.00
+  164  164     0   2   0   1   0   0   0   6   4   0   4  29   0   0   0   1   3  16   5  28   250    0    0   1.920     63  0.00
+  165  165     1  34  55   2   7   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.025     33  0.00
+  166  166    53   1  27   1   0   0   0   0   3   0   2   7   0   0   0   0   0   0   6   0   250    0    0   1.338     43  0.00
+  167  167     4   7  12   4   0   0   0   5   6   0   0  26   0   0   0   1   1   9  23   1   250    0    0   2.127     69  0.00
+  168  168     1   0   0   0   0   0   0   4  22   0  23  41   0   0   0   0   1   0   6   1   250    0    0   1.531     50  0.00
+  169  169     0   0   0   0   0   0   0   0   0   0   0   0   0   0   2   1  97   0   0   0   250    0    0   0.159      5  0.00
+  170  170     0   0   0   0   0   0   0   3  22   0   1   3   0   4   4   8   6  44   4   1   250    0    0   1.770     58  0.00
+  171  171     0   0   0   0   2   0   6   6   2   2   5   9   0  43   5   2   7   0   9   3   250    0    0   2.017     66  0.00
+  172  172    15  20  15  20   0   1   0  18   0   0   2   7   0   0   1   0   0   0   0   0   250    0    0   1.929     63  0.00
+  173  173     0   0   0   0   0  98   1   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.117      3  0.00
+  174  174     1  42   7   1   9   2   6   0   0   0   0   0   0   0   0   0   0   0  32   0   250    0    0   1.479     48  0.00
+  175  175    24  16  29   0   2  15   0   2   2   0   0   1   0   0   0   0   0   0   0   8   250    0    0   1.799     59  0.00
+  176  176     9  37  33   2  16   0   0   0   1   0   0   2   0   0   0   0   0   0   0   0   250    0    0   1.453     47  0.00
+  177  177     0   7   0   6   0   0   0   0   0  76   4   5   0   0   0   1   0   0   0   0   250    0    0   0.954     31  0.00
+  178  178     0  37   0   3   0   0   0   2  11   0  17   9   0   1   0   0  21   0   0   0   250    0    0   1.658     54  0.00
+  179  179     0  25   1   2  27  42   0   0   0   2   0   0   0   0   0   0   0   0   0   0   250    0    0   1.303     42  0.00
+  180  180     2   2   0   0  19   0   0   0   0  77   0   0   0   0   0   0   0   0   0   0   250    0    0   0.659     21  0.00
+  181  181     5  48   4  16   0   0   0  20   3   0   4   0   0   0   0   0   0   0   0   0   250    0    0   1.485     48  0.00
+  182  182     0   2   0   3  46   0   0   5  39   0   1   5   0   0   0   0   0   0   0   0   250    0    0   1.219     40  0.00
+  183  183    22  10  21  35   2   0   0   3   5   0   0   0   1   0   0   0   0   0   0   0   250    0    0   1.644     54  0.00
+  184  184    20   2  11  46   0   0   0   0   0   0   0  20   0   0   0   0   0   0   0   0   250    0    0   1.327     43  0.00
+  185  185     0   0   0   0  36  42  21   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.082     35  0.00
+  186  186     4   6   2   0  56   2  11   0  19   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.363     44  0.00
+  187  187     5   0  88   0   1   0   0   0   0   0   0   5   0   0   0   0   0   0   0   0   250    0    0   0.494     16  0.00
+  188  188     0   0   0   0   0   0   0   0  22   0  77   1   1   0   0   0   0   0   0   0   250    0    0   0.610     20  0.00
+  189  189     6   1   2   5   0   0   0  35   4   0   2  43   2   0   0   0   0   0   0   0   250    0    0   1.468     48  0.00
+  190  190    33  58   8   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   250    0    0   0.943     30  0.00
+  191  191     0   0   0   0   0   0   0   4  95   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.206      6  0.00
+  192  192    20   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  79   0   0   250    0    0   0.544     17  0.00
+  193  193     0   1   1   0   0   0   0   0   0   0   0  79  19   0   0   0   0   0   0   0   250    0    0   0.602     19  0.00
+  194  194     0   0   0   0   0   0   0   0   0   0   0   0   0  20   0   0   0   0  80   0   250    0    0   0.524     17  0.00
+  195  195     0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   250    0    0   0.000      0  0.00
+  196  196     0   6   0   0   0   0   0   0  51   0   1   4   0  36   0   0   0   0   0   0   250    0    0   1.119     36  0.00
+  197  197     0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+  198  198     0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   249    0    0   0.000      0  0.00
+  199  199     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   250    0    0   0.000      0  0.00
+  200  200    16  62   1   1   0   0   0   0   0   0   0   0   0   0   0   0  20   0   0   0   250    0    0   1.009     33  0.00
+  201  201    14   0   0   0   0   0   0   0   6  39   1  40   0   0   0   0   0   0   0   0   250    0    0   1.248     40  0.00
+  202  202     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   250    0    0   0.000      0  0.00
+  203  203     0   0   0   0   0   0   0  62  37   0   1   0   0   0   0   0   0   0   0   0   250    0    0   0.704     23  0.00
+  204  204     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   250    0    0   0.000      0  0.00
+  205  205     0   0   0   0   0   0   0   4   6   0  69   1   0   0   0   0  20   0   0   0   250    0    0   0.937     30  0.00
+  206  206     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  99   0   1   250    0    0   0.046      1  0.00
+  207  207     0  81  18   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.527     17  0.00
+  208  208    79   0   0   0   0   0   0   0  20   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.530     17  0.00
+  209  209     0   0   0   0   0   0   0   4  28   0  47   0   0   0   0   0   0   0   0  20   250    0    0   1.190     39  0.00
+  210  210     0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+  211  211     0   0   0   0  53   0  33   0   0   0   0   0   0  14   0   0   0   0   0   0   250    0    0   0.977     32  0.00
+  212  212     0   0   0  14   0   0   0   0   0   0   0   0   1  28   0   0   0   0  56   0   250    0    0   1.054     34  0.00
+  213  213    60   0  32   0   0   0   0   0   0   0   0   8   0   0   0   0   0   0   0   0   250    0    0   0.872     28  0.00
+  214  214     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  94   0   6   250    0    0   0.215      7  0.00
+  215  215     0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.026      0  0.00
+  216  216     0   0   0   0   0   0   0   0  41   0  58   1   0   0   0   0   0   0   0   0   250    0    0   0.721     23  0.00
+  217  217     0   0   0   0   0   0   0  52  32   0  16   0   0   0   0   0   0   0   0   0   249    0    0   1.001     32  0.00
+  218  218     0   4   2  51   0   0   0  43   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.937     30  0.00
+  219  219     0   0   0   0   0   0   0  11  13  43   6   1   0   0   0  25   0   0   0   0   250    0    0   1.477     48  0.00
+  220  220     0   0   0   0  95   2   2   0   0   0   1   0   0   0   0   0   0   0   0   0   250    0    0   0.251      8  0.00
+  221  221     0   0   0   0   0   0   0  21  78   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.541     17  0.00
+  222  222     2  79   2  18   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.627     20  0.00
+  223  223     0   1   0   0  99   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.072      2  0.00
+  224  224     0   0   0   4  95   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.258      8  0.00
+  225  225    20  64   0  16   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.904     29  0.00
+  226  226     0   0   0   0   0   0   0  37  61   0   2   1   0   0   0   0   0   0   0   0   250    0    0   0.774     25  0.00
+  227  227     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   250    0    0   0.000      0  0.00
+  228  228     0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+  229  229     4   0  29   3   0   0   0   0  52   0   1  10   0   0   0   0   0   0   0   0   250    0    0   1.239     40  0.00
+  230  230     0   0   0   0   0   0   0  20   0   0   3   0   0   0   0   0   0   0  76   0   250    0    0   0.670     22  0.00
+  231  231     0   0  65  35   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.648     21  0.00
+  232  232    23   8  60   5   0   2   0   0   0   0   0   2   0   0   0   0   0   0   0   0   250    0    0   1.196     39  0.00
+  233  233     8  33   3  26   1   0   0   0   4   0   1  24   0   0   0   0   0   0   0   0   250    0    0   1.603     52  0.00
+  234  234    22   2  26  48   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.202     39  0.00
+  235  235     0   0   0   0   0   0   0   1   2   0  52   0   2   0   0   0   0   0  43   0   250    0    0   0.907     29  0.00
+  236  236     1   2   8   2   0   0   0   3  66   0   3  13   2   0   0   0   0   0   0   0   250    0    0   1.243     40  0.00
+  237  237     3  69   3  17   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.986     32  0.00
+  238  238     0   1   3  20   0   0   0   1  16   0   7  49   2   0   0   0   0   0   0   0   250    0    0   1.445     47  0.00
+  239  239    27   0   2   0   0   0   0   0  24   0   5  40   2   0   0   0   0   0   0   0   250    0    0   1.386     45  0.00
+  240  240     5   9  35   2   0   0   0   0   0   0   1  48   0   0   0   0   0   0   0   0   250    0    0   1.229     40  0.00
+  241  241     0  73   7  12   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.892     29  0.00
+  242  242     0   0   0   0  99   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.052      1  0.00
+  243  243     0  64   2   5  27   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   250    0    0   0.953     31  0.00
+  244  244     0   0   0   0   0   0   0  94   2   0   0   0   0   0   0   0   0   0   2   0   245    2    0   0.328     10  0.00
+  245  245     0   0   0   0   0   0   0  58  21   4   5   9   0   0   0   0   0   0   2   0   248    1    0   1.285     42  0.00
+  246  246     0   4   0   1  10  52  10   0   0   4  13   4   0   1   0   0   0   0   0   0   248    1    0   1.615     53  0.00
+  247  247     0  21   1   2   2   0  10   2   2   1   3   0   1  31   1   0  13   0   3   4   249    0    0   2.109     69  0.00
+  248  248     0   2   2   1   0   0   0  22  11  19  12   2   0   0   0   0   0   0  25   2   250    0    0   1.942     63  0.00
+  249  249     0   1   5   2   0   0   0   0   2  79   3   3   0   3   0   0   1   0   2   0   250    0    0   0.950     31  0.00
+  250  250     1  29   2   3  29   7   4   0   2   0   1   3   0   5   0   0   3   0   8   1   248    1    0   2.082     68  0.00
+  251  251     2  27   1  10  10   0   1   2   2   6   9   4   0   2   0   0   1   0  18   3   250    0    0   2.255     74  0.00
+  252  252     1   6   9   0  11   8   0   0   2  56   3   4   0   0   0   0   0   0   1   0   250    0    0   1.543     50  0.00
+  253  253     4   2  26   0   0   4   1   0   0  20   1   0   0   4   0   0   2  35   0   0   249    0    0   1.745     57  0.00
+  254  254     0  32   4   2  21   4   0   0   1  31   0   2   0   0   0   0   0   0   0   0   249    0    0   1.616     53  0.00
+  255  255     0   0   0   0   8   0  20  32   0   4   4   4   1   2   0   0   0   0   4   1   201   20    0   1.936     63  0.00
+  256  256     4   6   8   0  11   7   1   0   2   2   9  32   0   0   0   0   0   0   0   0   200   20    0   2.008     65  0.00
+  257  257    15  11  46   2  14   0   0   0   3   0   0   9   0   0   0   0   0   0   0   0   249    0    0   1.589     52  0.00
+  258  258     0   1   0   0   0  57   2   0   0   0   7   2   1   0   0   0   0   0  29   0   250    0    0   1.143     37  0.00
+  259  259     0  28   1   0  70   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.708     23  0.00
+  260  260    20   5  10  16   1   0   0   7  25   0   2  13   1   0   0   0   0   0   0   0   250    0    0   1.955     64  0.00
+  261  261     4  42  19   6   6   0   0   0   6   0   0  18   0   0   0   0   0   0   0   0   250    0    0   1.644     54  0.00
+  262  262     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  99   0   1   0   0   250    0    0   0.046      1  0.00
+  263  263    20   0   8   2   0   0   0   0   9   0   3  59   0   0   0   0   0   0   0   0   250    0    0   1.237     40  0.00
+  264  264     2  32   2   6  12   3   1   7  25   0   5   3   2   0   0   0   1   0   0   0   250    0    0   1.975     64  0.00
+  265  265     4  35  10   4  32   0   0   1   9   0   0   1   3   0   0   0   0   0   0   0   250    0    0   1.652     54  0.00
+  266  266     8  60   2   0  30   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.980     32  0.00
+  267  267     6  28   2  22   0   0   0   0   1   0   8  33   0   0   0   0   0   0   0   0   250    0    0   1.583     51  0.00
+  268  268     5   4  10  27  25   0   0   0   2   0  18   8   1   0   0   0   0   0   0   0   250    0    0   1.833     60  0.00
+  269  269    17  17   3  27   6   0   0   1   2   0   8   8  12   0   0   0   0   0   0   0   250    0    0   1.991     65  0.00
+  270  270     0   0   0   0  93   0   6   0   0   0   0   0   1   0   0   0   0   0   0   0   250    0    0   0.272      8  0.00
+  271  271     4  55  39   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.929     30  0.00
+  272  272     0  20   0   0   0  80   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.505     16  0.00
+  273  273    26   7  57   1   5   0   0   0   4   0   0   1   0   0   0   0   0   0   0   0   250    0    0   1.206     39  0.00
+  274  274     0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   250    0    0   0.026      0  0.00
+  275  275     0   0   0   0   0   0   0   4  90   0   2   3   0   0   0   0   0   0   0   0   250    0    0   0.444     14  0.00
+  276  276     0   0   0   0   0   0   0   0   6   0  65  29   0   0   0   0   0   0   0   0   250    0    0   0.838     27  0.00
+  277  277     2  30   3   0  22   0  43   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.245     40  0.00
+  278  278     0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+  279  279     0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   250    0    0   0.026      0  0.00
+  280  280     1   3   0   1  47   0  28   0   0  20   0   0   0   0   0   0   0   0   0   0   250    0    0   1.220     40  0.00
+  281  281     0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   250    0    0   0.000      0  0.00
+  282  282     0   0   0   0   1   0  99   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.065      2  0.00
+  283  283     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100   250    0    0   0.000      0  0.00
+  284  284     0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  99   0   0   0   250    0    0   0.072      2  0.00
+  285  285    20  61  16   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   1.032     33  0.00
+  286  286     0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.026      0  0.00
+  287  287     0   0   0   0   0   0   4   2   3   0  19   0   0  39  30   1   1   0   0   0   250    0    0   1.491     48  0.00
+  288  288     0  78   1   0  20   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.567     18  0.00
+  289  289     5  37   1   0   0   0   0  57   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.902     29  0.00
+  290  290     0   1   0   0   0  98   0   0   0   0   0   0   0   0   1   0   0   0   0   0   250    0    0   0.093      3  0.00
+  291  291     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  99   0   0   0   0   250    0    0   0.052      1  0.00
+  292  292    34   1  20   1   0   0   0   0   0   0   7   0   0   0   0   1   2   0  33   0   250    0    0   1.494     49  0.00
+  293  293     0   8   0   0  72   0   1   0   0   0   0   0  20   0   0   0   0   0   0   0   250    0    0   0.794     26  0.00
+  294  294     1  82  17   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.522     17  0.00
+  295  295     0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   250    0    0   0.000      0  0.00
+  296  296    14  71  12   2   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.944     30  0.00
+  297  297     1   0   0   0   0   0   0   0   0   0  13  81   4   0   0   0   0   0   1   0   250    0    0   0.654     21  0.00
+  298  298     9  84   2   2   1   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   250    0    0   0.652     21  0.00
+  299  299    18   4  21   0   8   0   0   1  46   0   0   1   0   0   0   0   0   0   0   0   250    0    0   1.459     47  0.00
+  300  300     0  33   0   6   2  33   1   1   0   0   0   1   1   0   1   0   0   0  21   0   250    0    0   1.561     51  0.00
+  301  301    22  36   8   1   0   0   0   0   0   0   0   0  32   0   0   0   0   0   0   0   250    0    0   1.378     45  0.00
+  302  302    18  39  11  30   1   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   250    0    0   1.391     45  0.00
+  303  303    35  16   8   0   2  37   0   0   1   1   1   0   0   0   0   0   0   0   0   0   250    0    0   1.444     47  0.00
+  304  304    27   2   2   0   4   0   8   0   1   0   0  25   0  29   0   0   1   0   0   0   250    0    0   1.683     55  0.00
+  305  305    16   2  16   1   0   0   0  12  33   0  12   6   0   0   0   0   0   0   0   0   250    0    0   1.789     58  0.00
+  306  306     2   2   6   1   5   0   0   8  29   0  36   8   0   0   0   0   0   0   0   0   250    0    0   1.730     56  0.00
+  307  307    33  25  10  12   1  15   0   0   2   0   0   2   0   0   0   0   0   0   0   0   246    0    0   1.719     56  0.00
+  308  308     4  19  23  11   0   0   0   0   0  38   3   0   0   0   2   0   0   0   0   0   243    0    0   1.599     52  0.00
+  309  309    15  28  35  10   3   0   0   0   3   0   0   6   0   0   0   0   0   0   0   0   225    0    0   1.679     55  0.00
+  310  310     1   8   5   8   4  19  11   0  15   0  19   9   0   0   0   0   0   0   0   0   225    0    0   2.128     69  0.00
+  311  311     1  24   5   5   8   0   2   0   1   2   4  24   1   0   1   0  23   0   0   0   189    0    0   1.960     64  0.00
+  312  312     0   2   0   0   0   0   0   3  53   0  23   1   1   0   1   1   2   1   3  11   188    0    0   1.428     46  0.00
+  313  313     0   1   0   1   0   7   0  37   1   0  30   0  12   2   0   1   0   0  10   0   144    0    0   1.632     53  0.00
+  314  314     6  37  55   0   1   0   0   0   0   0   1   1   0   0   0   0   0   0   0   0   142    0    0   0.989     32  0.00
+  315  315     0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   138    0    0   0.000      0  0.00
+  316  316     0   0   0   0   0   0   0   0   0  89   9   0   0   0   0   2   0   0   1   0   115    0    0   0.428     14  0.00
+  317  317     0   8   0   0   0   0   1   0   0   0   0   0   0   9   0   0  80   0   3   0   102    0    0   0.741     24  0.00
+  318  318     0   0   0   0   0   0   0   0   0   0   5  94   0   0   0   0   0   0   2   0    62    0    0   0.272      8  0.00
+//

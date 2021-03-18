@@ -2,6 +2,7 @@
 import sys
 import os
 import logging
+import json
 if 'CINTHIA_ROOT' in os.environ:
     sys.path.append(os.environ['CINTHIA_ROOT'])
 else:
@@ -18,115 +19,93 @@ import re
 import numpy
 from Bio import SeqIO
 
+def run_multifasta(ns):
+    pass
+
+def run_pssm(ns):
+    we = workenv.TemporaryEnv()
+    record = SeqIO.read(ns.fasta, "fasta")
+    acc = record.id
+    sequence = str(record.seq)
+
+    profile = bcp.BlastCheckPointProfile(ns.pssm)
+    profile = utils.rearrange_profile(profile, cfg.BLASTALPH, cfg.HSSPALPH)
+    topology = ""
+    ofsout = open(ns.outf, 'w')
+    if ns.forcetopo:
+        CRFprediction, CRFprobs = cinthia.runCRF(cfg.CRFFORCEDMODEL, profile, we)
+        cinthia_input_tmp_file = we.createFile("cinthia.", ".input.dat")
+        cinthia_output_tmp_file = we.createFile("cinthia.", ".output.dat")
+        ofs = open(cinthia_input_tmp_file, 'w')
+        ofs.write("# M1 M2 M3 M4\n")
+        for i in range(len(CRFprediction)):
+            ofs.write("\t".join([CRFprediction[i], CRFprediction[i], CRFprediction[i], CRFprediction[i]]) + '\n')
+        ofs.close()
+        DP,names=cinthia.readPreds(cinthia_input_tmp_file)
+        tsymb=cinthia.tmsymbols()
+        tmseg,topSeg,topSum,mVote=cinthia.topology0(DP,names,12,35,0.0,tsymb)
+        pLen=len(DP[names[0]])
+        cinthia.writeConsensus(tmseg,pLen,topSeg,topSum,mVote,tsymb,cinthia_output_tmp_file)
+        topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()]).replace("l", "i").replace("L", "o")
+    else:
+        CRFprediction, CRFprobs = cinthia.runCRF(cfg.CRFMODEL, profile, we)
+        HMMUprediction = cinthia.runHMM(cfg.HMMUMODEL, profile, we)
+        HMMWprediction = cinthia.runHMM(cfg.HMMWMODEL, profile, we)
+        if 'T' in CRFprediction and 'T' in HMMUprediction and 'T' in HMMWprediction:
+            cinthia_input_tmp_file = we.createFile("cinthia.", ".input.dat")
+            cinthia_output_tmp_file = we.createFile("cinthia.", ".output.dat")
+            ofs = open(cinthia_input_tmp_file, 'w')
+            ofs.write("# M1 M2 M3 M4\n")
+            for i in range(len(CRFprediction)):
+                ofs.write("\t".join([HMMUprediction[i], HMMWprediction[i], CRFprediction[i], CRFprediction[i]]) + '\n')
+            ofs.close()
+            DP,names=cinthia.readPreds(cinthia_input_tmp_file)
+            tsymb=cinthia.tmsymbols()
+            tmseg,topSeg,topSum,mVote=cinthia.topology0(DP,names,12,35,0.0,tsymb)
+            pLen=len(DP[names[0]])
+
+            cinthia.writeConsensus(tmseg,pLen,topSeg,topSum,mVote,tsymb,cinthia_output_tmp_file)
+            topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()])
+            if not re.match("-GLOBULAR", topology):
+                topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()]).replace("l", "i").replace("L", "o")
+            else:
+                topology = ""
+        else:
+            topology = ""
+        if ns.outfmt == "json":
+            acc_json = utils.get_json_output(acc, sequence, topology, CRFprobs)
+            json.dump([acc_json], ofsout, indent=5)
+        else:
+            utils.write_gff_output(acc, sequence, ofsout, topology, CRFprobs)
+        ofsout.close()
+        we.destroy()
+        sys.exit(0)
 
 def main():
     ## Parsing input arguments
-    DESC="Cinthia: Combined predictor of signal peptide, transit peptide and transmembrane topology"
+    DESC="Cinthia: Predictor of helical transmembrane topology"
     parser = argparse.ArgumentParser(description=DESC)
-    parser.add_argument("-f", "--fasta",
-                        help = "The input protein sequence in FASTA format",
-                        dest = "fasta", required = True)
-    parser.add_argument("-p", "--pssm",
-                        help = "The input PSSM/Profile file (PSIBLAST)",
-                        dest = "pssm", required = True)
-    parser.add_argument("-o", "--out",
-                        help = "The output GFF3 prediction file",
-                        dest = "output", required = True)
-    parser.add_argument("-t", "--forcetopo",
-                        help = "Force topology to contain at least one TM segment",
-                        dest = "forcetopo", action="store_true")
-    ns = parser.parse_args()
-
-    we = workenv.TemporaryEnv()
-
-    try:
-        record = SeqIO.read(ns.fasta, "fasta")
-    except:
-        logging.exception("Error reading FASTA: file is not FASTA or more than one sequence is present")
-        we.destroy()
-        sys.exit(1)
+    subparsers   = parser.add_subparsers(title = "subcommands", description = "valid subcommands", required = True)
+    multifasta  = subparsers.add_parser("multi-fasta", help = "Multi-FASTA input module", description = "DeepMito: Multi-FASTA input module.")
+    pssm  = subparsers.add_parser("pssm", help = "PSSM input module (one sequence at a time)", description = "DeepMito: PSSM input module.")
+    multifasta.add_argument("-f", "--fasta", help = "The input multi-FASTA file name", dest = "fasta", required = True)
+    multifasta.add_argument("-d", "--dbfile", help = "The PSIBLAST DB file", dest = "dbfile", required= True)
+    multifasta.add_argument("-o", "--outf", help = "The output file", dest = "outf", required = True)
+    multifasta.add_argument("-m", "--outfmt", help = "The output format: json or gff3 (default)", choices=['json', 'gff3'], required = False, default = "gff3")
+    multifasta.add_argument("-t", "--forcetopo", help = "Force topology to contain at least one TM segment", dest = "forcetopo", action="store_true")
+    multifasta.add_argument("-c", "--cache-dir", help="Cache dir for alignemnts", dest="cache_dir", required=False, default=None)
+    multifasta.set_defaults(func=run_multifasta)
+    pssm.add_argument("-f", "--fasta", help = "The input FASTA file name (one sequence)", dest = "fasta", required = True)
+    pssm.add_argument("-p", "--pssm", help = "The PSIBLAST PSSM file", dest = "pssm", required= True)
+    pssm.add_argument("-o", "--outf", help = "The output file", dest = "outf", required = True)
+    pssm.add_argument("-m", "--outfmt", help = "The output format: json or gff3 (default)", choices=['json', 'gff3'], required = False, default = "gff3")
+    pssm.add_argument("-t", "--forcetopo", help = "Force topology to contain at least one TM segment", dest = "forcetopo", action="store_true")
+    pssm.set_defaults(func=run_pssm)
+    if len(sys.argv) == 1:
+      parser.print_help()
     else:
-        acc = record.id
-        sequence = str(record.seq)
-        try:
-            utils.check_sequence_pssm_match(sequence, ns.pssm)
-        except:
-            logging.exception("Error in PSSM: sequence and provided PSSM do not match.")
-            we.destroy()
-            sys.exit(1)
-        else:
-            profile = bcp.BlastCheckPointProfile(ns.pssm)
-            if ns.forcetopo:
-                CRFprediction, CRFprobs = cinthia.runCRF(cfg.CRFFORCEDMODEL, profile, we)
-                
+      ns = parser.parse_args()
+      ns.func(ns)
 
-SPprofile   = getNewTmpFile("sp.", ".prof")
-SPresults   = getNewTmpFile("sp.", ".res")
-TRprofile   = getNewTmpFile("tr.", ".prof")
-TRresults   = getNewTmpFile("tr.", ".res")
-HMMSprofile = getNewTmpFile("hmm.", ".prof")
-CRFprofile  = getNewTmpFile("crf.", ".prof")
-CRFraw      = getNewTmpFile("crf.raw.", ".res")
-CRFpost     = getNewTmpFile("crf.posterior.", ".res.")
-CINTHIAInp  = getNewTmpFile("cinthia.", ".input")
-CINTHIAOut  = getNewTmpFile("cinthia.", ".output")
-
-cleavageSite = 0
-peptide = 'none'
-
-writeCTerminus(unirefProf, HMMSprofile, cleavageSite, newline=False)
-writeCTerminus(unirefProf, CRFprofile, cleavageSite)
-
-
-if ns.forcetopo:
-  _, CRFprediction, CRFprobs = cinthia.runCRF(CRFForcedModel, CRFprofile, CRFraw, CRFpost, decoding, 8, we)
-  ofs = open(CINTHIAInp, 'w')
-  ofs.write("# M1 M2 M3 M4\n")
-  for i in range(len(CRFprediction)):
-    ofs.write("\t".join([CRFprediction[i], CRFprediction[i], CRFprediction[i], CRFprediction[i]]) + '\n')
-  ofs.close()
-  DP,names=cinthia.readPreds(CINTHIAInp)
-  tsymb=cinthia.tmsymbols()
-  tmseg,topSeg,topSum,mVote=cinthia.topology0(DP,names,12,35,0.0,tsymb)
-  pLen=len(DP[names[0]])
-
-  cinthia.writeConsensus(tmseg,pLen,topSeg,topSum,mVote,tsymb,CINTHIAOut)
-  topology = "".join([x.strip() for x in open(CINTHIAOut).readlines()]).replace("l", "i").replace("L", "o")
-else:
-
-  printDate("Predicting trans-membrane helices on mature protein sequence.")
-  _, CRFprediction, CRFprobs = cinthia.runCRF(CRFmodel, CRFprofile, CRFraw, CRFpost, decoding, 8)
-  _, HMMUprediction = cinthia.runHMM(HMMUmodel, HMMSprofile)
-  _, HMMWprediction = cinthia.runHMM(HMMWmodel, HMMSprofile)
-
-  if 'T' in CRFprediction and 'T' in HMMUprediction and 'T' in HMMWprediction:
-    ofs = open(CINTHIAInp, 'w')
-    ofs.write("# M1 M2 M3 M4\n")
-    for i in range(len(CRFprediction)):
-      ofs.write("\t".join([HMMUprediction[i], HMMWprediction[i], CRFprediction[i], CRFprediction[i]]) + '\n')
-    ofs.close()
-
-    DP,names=cinthia.readPreds(CINTHIAInp)
-    tsymb=cinthia.tmsymbols()
-    tmseg,topSeg,topSum,mVote=cinthia.topology0(DP,names,12,35,0.0,tsymb)
-    pLen=len(DP[names[0]])
-
-    cinthia.writeConsensus(tmseg,pLen,topSeg,topSum,mVote,tsymb,CINTHIAOut)
-    topology = "".join([x.strip() for x in open(CINTHIAOut).readlines()])
-    if not re.match("-GLOBULAR", topology):
-      topology = "".join([x.strip() for x in open(CINTHIAOut).readlines()]).replace("l", "i").replace("L", "o")
-  else:
-    topology = "-GLOBULAR"
-
-peptideStr = ""
-sigStr = "SP=NO"
-
-trStr = "TR=NO"
-
-score = str(round(numpy.mean([CRFprobs[i] for i in range(len(CRFprobs)) if CRFprediction[i] == "T"]), 2))
-ofs = open(ns.output, 'w')
-ofs.write( "\t".join([acc, sigStr, trStr, peptideStr+topology, score]) + '\n' )
-
-DestroyTemporaryEnvironment()
-
-sys.exit(0)
+if __name__ == "__main__":
+    main()

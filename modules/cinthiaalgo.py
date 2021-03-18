@@ -3,15 +3,14 @@ import os
 import sys
 import subprocess
 import string
-import sets
 import math
 import re
 from . import maxss # WARNING ! This must be in also in other places
 #sys.path.append('/home/savojard/LocPipeline/CINTHIA-MOD/hmm')
-from .hmm import tr_obj
-import .hmm import HMM_IO
-import .hmm import algo_HMM
-import . import config as cfg
+from .hmm import tr_obj as tr_obj
+from .hmm import HMM_IO as HMM_IO
+from .hmm import algo_HMM as algo_HMM
+from . import config as cfg
 
 def runCRF(model, profile, we):
   crfdat = we.createFile("crf.", ".dat")
@@ -19,13 +18,13 @@ def runCRF(model, profile, we):
   for i in range(profile.shape[0]):
       for j in range(profile.shape[1]):
           cdofs.write("%f " % profile[i][j])
-      cdofs.write("l\n")
+      cdofs.write("0.0 l\n")
   cdofs.write("\n")
   cdofs.close()
   crfpred = we.createFile("crf.", ".pred")
   crfplabel = we.createFile("crf.",".plabel")
 
-  subprocess.call([cinthiaconfig.BIOCRF, '-test',
+  subprocess.call([cfg.BIOCRF, '-test',
                    '-m', model,
                    '-o', crfpred,
                    '-d', cfg.CRF_DECONDING,
@@ -38,14 +37,22 @@ def runCRF(model, profile, we):
   probs       = [float(line.split()[1]) for line in open(crfplabel+"_0").readlines()]
   return prediction, probs
 
-def runHMM(model, inpf):
-  profile = open(inpf).readlines()
-  labels  = [profile[i].split()[-1] for i in range(len(profile))]
-  seq     = [map(float, profile[i].split()[:-1]) for i in range(len(profile))]
-  obj     = tr_obj.TR_OBJ(seq, labels, name=profile)
+def runHMM(model, profile, we):
+  #profile = open(inpf).readlines()
+  hmmdat = we.createFile("hmm.", ".dat")
+  hdofs=open(hmmdat,'w')
+  for i in range(profile.shape[0]):
+      for j in range(profile.shape[1]):
+          hdofs.write("%f " % profile[i][j])
+      hdofs.write("0.0 l\n")
+  hdofs.close()
+  dp = open(hmmdat).readlines()
+  labels  = ["l" for i in range(len(dp))]
+  seq     = [[float(x) for x in dp[i].split()[:-1]] for i in range(len(dp))]
+  obj     = tr_obj.TR_OBJ(seq, labels, name=dp)
   hmm     = HMM_IO.get_hmm(model)
   bestpath, bestval = algo_HMM.maxAcc_decoder(hmm, obj.seq)
-  return ''.join(labels), ''.join(list(bestpath))
+  return ''.join(list(bestpath))
 
 class tmsymbols:
       def __init__(self,tm='T',inside='l',outside='L',globular='g'):

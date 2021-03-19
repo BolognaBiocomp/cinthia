@@ -10,17 +10,80 @@ else:
     logging.error("Please, set and export CINTHIA_ROOT to point to cinthia root folder")
     sys.exit(1)
 import argparse
-from modules import cinthiaalgo as cinthia
-from modules import config as cfg
-from modules import cpparser as bcp
-from modules import workenv
-from modules import utils
+from cinthialib import cinthiaalgo as cinthia
+from cinthialib import config as cfg
+from cinthialib import cpparser as bcp
+from cinthialib import workenv
+from cinthialib import utils
+from cinthialib import blast
 import re
 import numpy
 from Bio import SeqIO
 
 def run_multifasta(ns):
-    pass
+    we = workenv.TemporaryEnv()
+    data_cache = utils.get_data_cache(ns.cache_dir)
+    i = 0
+    for record in SeqIO.parse(ns.fasta, 'fasta'):
+        acc = record.id
+        sequence = str(record.seq)
+        prefix = "seq%d" % i
+        fastaSeq  = we.createFile(prefix+".", ".fasta")
+        SeqIO.write([record], fastaSeq, 'fasta')
+        pssm = blast.runPsiBlast(prefix, ns.dbfile, fastaSeq, we, data_cache=data_cache)
+        profile = bcp.BlastCheckPointProfile(pssm)
+        profile = utils.rearrange_profile(profile, cfg.BLASTALPH, cfg.HSSPALPH)
+        topology = ""
+        ofsout = open(ns.outf, 'w')
+        if ns.forcetopo:
+            CRFprediction, CRFprobs = cinthia.runCRF(cfg.CRFFORCEDMODEL, profile, we)
+            cinthia_input_tmp_file = we.createFile("cinthia.", ".input.dat")
+            cinthia_output_tmp_file = we.createFile("cinthia.", ".output.dat")
+            ofs = open(cinthia_input_tmp_file, 'w')
+            ofs.write("# M1 M2 M3 M4\n")
+            for i in range(len(CRFprediction)):
+                ofs.write("\t".join([CRFprediction[i], CRFprediction[i], CRFprediction[i], CRFprediction[i]]) + '\n')
+            ofs.close()
+            DP,names=cinthia.readPreds(cinthia_input_tmp_file)
+            tsymb=cinthia.tmsymbols()
+            tmseg,topSeg,topSum,mVote=cinthia.topology0(DP,names,12,35,0.0,tsymb)
+            pLen=len(DP[names[0]])
+            cinthia.writeConsensus(tmseg,pLen,topSeg,topSum,mVote,tsymb,cinthia_output_tmp_file)
+            topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()]).replace("l", "i").replace("L", "o")
+        else:
+            CRFprediction, CRFprobs = cinthia.runCRF(cfg.CRFMODEL, profile, we)
+            HMMUprediction = cinthia.runHMM(cfg.HMMUMODEL, profile, we)
+            HMMWprediction = cinthia.runHMM(cfg.HMMWMODEL, profile, we)
+            if 'T' in CRFprediction and 'T' in HMMUprediction and 'T' in HMMWprediction:
+                cinthia_input_tmp_file = we.createFile("cinthia.", ".input.dat")
+                cinthia_output_tmp_file = we.createFile("cinthia.", ".output.dat")
+                ofs = open(cinthia_input_tmp_file, 'w')
+                ofs.write("# M1 M2 M3 M4\n")
+                for i in range(len(CRFprediction)):
+                    ofs.write("\t".join([HMMUprediction[i], HMMWprediction[i], CRFprediction[i], CRFprediction[i]]) + '\n')
+                ofs.close()
+                DP,names=cinthia.readPreds(cinthia_input_tmp_file)
+                tsymb=cinthia.tmsymbols()
+                tmseg,topSeg,topSum,mVote=cinthia.topology0(DP,names,12,35,0.0,tsymb)
+                pLen=len(DP[names[0]])
+
+                cinthia.writeConsensus(tmseg,pLen,topSeg,topSum,mVote,tsymb,cinthia_output_tmp_file)
+                topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()])
+                if not re.match("-GLOBULAR", topology):
+                    topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()]).replace("l", "i").replace("L", "o")
+                else:
+                    topology = ""
+            else:
+                topology = ""
+            if ns.outfmt == "json":
+                acc_json = utils.get_json_output(acc, sequence, topology, CRFprobs)
+                json.dump([acc_json], ofsout, indent=5)
+            else:
+                utils.write_gff_output(acc, sequence, ofsout, topology, CRFprobs)
+        i = i + 1
+    ofsout.close()
+    we.destroy()
+    sys.exit(0)
 
 def run_pssm(ns):
     we = workenv.TemporaryEnv()
@@ -77,9 +140,9 @@ def run_pssm(ns):
             json.dump([acc_json], ofsout, indent=5)
         else:
             utils.write_gff_output(acc, sequence, ofsout, topology, CRFprobs)
-        ofsout.close()
-        we.destroy()
-        sys.exit(0)
+    ofsout.close()
+    we.destroy()
+    sys.exit(0)
 
 def main():
     ## Parsing input arguments

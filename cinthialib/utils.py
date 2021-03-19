@@ -58,6 +58,15 @@ def rearrange_profile(profile, in_alph, out_alph):
         new_profile[:,i] = profile[:,in_alph.index(a)]
     return new_profile
 
+def get_data_cache(cache_dir):
+    import os
+    from . import datacache
+    ret = None
+    if cache_dir is not None:
+        if os.path.isdir(cache_dir):
+            ret = datacache.DataCache(cache_dir)
+    return ret
+
 def write_gff_output(acc, sequence, output_file, topology, scores):
     if topology != "":
         for mo in re.finditer("T+", topology):

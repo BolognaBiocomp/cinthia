@@ -1,0 +1,155 @@
+[
+     {
+          "accession": "sp|Q8VWJ1|HPT1_ARATH",
+          "features": [
+               {
+                    "type": "TRANSMEM",
+                    "category": "TOPOLOGY",
+                    "description": "Helical",
+                    "begin": 103,
+                    "end": 124,
+                    "score": 0.86,
+                    "evidences": [
+                         {
+                              "code": "ECO:0000256",
+                              "source": {
+                                   "name": "SAM",
+                                   "id": "CINTHIA/ENSEMBLE3.0",
+                                   "url": "https://busca.biocomp.unibo.it"
+                              }
+                         }
+                    ]
+               },
+               {
+                    "type": "TRANSMEM",
+                    "category": "TOPOLOGY",
+                    "description": "Helical",
+                    "begin": 131,
+                    "end": 152,
+                    "score": 0.86,
+                    "evidences": [
+                         {
+                              "code": "ECO:0000256",
+                              "source": {
+                                   "name": "SAM",
+                                   "id": "CINTHIA/ENSEMBLE3.0",
+                                   "url": "https://busca.biocomp.unibo.it"
+                              }
+                         }
+                    ]
+               },
+               {
+                    "type": "TRANSMEM",
+                    "category": "TOPOLOGY",
+                    "description": "Helical",
+                    "begin": 180,
+                    "end": 201,
+                    "score": 0.93,
+                    "evidences": [
+                         {
+                              "code": "ECO:0000256",
+                              "source": {
+                                   "name": "SAM",
+                                   "id": "CINTHIA/ENSEMBLE3.0",
+                                   "url": "https://busca.biocomp.unibo.it"
+                              }
+                         }
+                    ]
+               },
+               {
+                    "type": "TRANSMEM",
+                    "category": "TOPOLOGY",
+                    "description": "Helical",
+                    "begin": 203,
+                    "end": 222,
+                    "score": 0.75,
+                    "evidences": [
+                         {
+                              "code": "ECO:0000256",
+                              "source": {
+                                   "name": "SAM",
+                                   "id": "CINTHIA/ENSEMBLE3.0",
+                                   "url": "https://busca.biocomp.unibo.it"
+                              }
+                         }
+                    ]
+               },
+               {
+                    "type": "TRANSMEM",
+                    "category": "TOPOLOGY",
+                    "description": "Helical",
+                    "begin": 265,
+                    "end": 288,
+                    "score": 0.83,
+                    "evidences": [
+                         {
+                              "code": "ECO:0000256",
+                              "source": {
+                                   "name": "SAM",
+                                   "id": "CINTHIA/ENSEMBLE3.0",
+                                   "url": "https://busca.biocomp.unibo.it"
+                              }
+                         }
+                    ]
+               },
+               {
+                    "type": "TRANSMEM",
+                    "category": "TOPOLOGY",
+                    "description": "Helical",
+                    "begin": 312,
+                    "end": 334,
+                    "score": 0.88,
+                    "evidences": [
+                         {
+                              "code": "ECO:0000256",
+                              "source": {
+                                   "name": "SAM",
+                                   "id": "CINTHIA/ENSEMBLE3.0",
+                                   "url": "https://busca.biocomp.unibo.it"
+                              }
+                         }
+                    ]
+               },
+               {
+                    "type": "TRANSMEM",
+                    "category": "TOPOLOGY",
+                    "description": "Helical",
+                    "begin": 340,
+                    "end": 362,
+                    "score": 0.83,
+                    "evidences": [
+                         {
+                              "code": "ECO:0000256",
+                              "source": {
+                                   "name": "SAM",
+                                   "id": "CINTHIA/ENSEMBLE3.0",
+                                   "url": "https://busca.biocomp.unibo.it"
+                              }
+                         }
+                    ]
+               },
+               {
+                    "type": "TRANSMEM",
+                    "category": "TOPOLOGY",
+                    "description": "Helical",
+                    "begin": 370,
+                    "end": 390,
+                    "score": 0.82,
+                    "evidences": [
+                         {
+                              "code": "ECO:0000256",
+                              "source": {
+                                   "name": "SAM",
+                                   "id": "CINTHIA/ENSEMBLE3.0",
+                                   "url": "https://busca.biocomp.unibo.it"
+                              }
+                         }
+                    ]
+               }
+          ],
+          "sequence": {
+               "length": 393,
+               "sequence": "MESLLSSSSLVSAAGGFCWKKQNLKLHSLSEIRVLRCDSSKVVAKPKFRNNLVRPDGQGSSLLLYPKHKSRFRVNATAGQPEAFDSNSKQKSFRDSLDAFYRFSRPHTVIGTVLSILSVSFLAVEKVSDISPLLFTGILEAVVAALMMNIYIVGLNQLSDVEIDKVNKPYLPLASGEYSVNTGIAIVASFSIMSFWLGWIVGSWPLFWALFVSFMLGTAYSINLPLLRWKRFALVAAMCILAVRAIIVQIAFYLHIQTHVFGRPILFTRPLIFATAFMSFFSVVIALFKDIPDIEGDKIFGIRSFSVTLGQKRVFWTCVTLLQMAYAVAILVGATSPFIWSKVISVVGHVILATTLWARAKSVDLSSKTEITSCYMFIWKLFYAEYLLLPFLK"
+          }
+     }
+]

@@ -1,0 +1,5 @@
+.git
+testdata
+.vscode
+*.fasta
+*.fasta.*

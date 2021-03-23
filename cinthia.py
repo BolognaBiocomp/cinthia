@@ -24,6 +24,8 @@ def run_multifasta(ns):
     we = workenv.TemporaryEnv()
     data_cache = utils.get_data_cache(ns.cache_dir)
     i = 0
+    ofsout = open(ns.outf, 'w')
+    protein_jsons = []
     for record in SeqIO.parse(ns.fasta, 'fasta'):
         acc = record.id
         sequence = str(record.seq)
@@ -34,7 +36,7 @@ def run_multifasta(ns):
         profile = bcp.BlastCheckPointProfile(pssm)
         profile = utils.rearrange_profile(profile, cfg.BLASTALPH, cfg.HSSPALPH)
         topology = ""
-        ofsout = open(ns.outf, 'w')
+
         if ns.forcetopo:
             CRFprediction, CRFprobs = cinthia.runCRF(cfg.CRFFORCEDMODEL, profile, we)
             cinthia_input_tmp_file = we.createFile("cinthia.", ".input.dat")
@@ -75,12 +77,15 @@ def run_multifasta(ns):
                     topology = ""
             else:
                 topology = ""
-            if ns.outfmt == "json":
-                acc_json = utils.get_json_output(acc, sequence, topology, CRFprobs)
-                json.dump([acc_json], ofsout, indent=5)
-            else:
-                utils.write_gff_output(acc, sequence, ofsout, topology, CRFprobs)
+        if ns.outfmt == "json":
+            acc_json = utils.get_json_output(acc, sequence, topology, CRFprobs)
+            #json.dump([acc_json], ofsout, indent=5)
+            protein_jsons.append(acc_json)
+        else:
+            utils.write_gff_output(acc, sequence, ofsout, topology, CRFprobs)
         i = i + 1
+    if ns.outfmt == "json":
+        json.dump(protein_jsons, ofsout, indent=5)
     ofsout.close()
     we.destroy()
     sys.exit(0)

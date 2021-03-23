@@ -76,18 +76,13 @@ def write_gff_output(acc, sequence, output_file, topology, scores):
             print(acc, "CINTHIA/ENSEMBLE3.0", "Transmembrane", s+1, e, round(score,2), ".", ".", "Note=Helical;evidence=ECO:0000256")
 
 
-def get_json_output(acc, sequence, topology, scores):
-    acc_json = {'accession': acc, 'features': []}
-    acc_json['sequence'] = {
-                              "length": len(sequence),
-                              "sequence": sequence
-                           }
+def get_json_output(i_json, topology, scores):
     if topology != "":
         for mo in re.finditer("T+", topology):
             s = mo.start()
             e = mo.end()
             score = np.mean(scores[s:e])
-            acc_json['features'].append({
+            i_json['features'].append({
                   "type": "TRANSMEM",
                   "category": "TOPOLOGY",
                   "description": "Helical",
@@ -105,4 +100,4 @@ def get_json_output(acc, sequence, topology, scores):
                     }
                   ]
             })
-    return acc_json
+    return i_json

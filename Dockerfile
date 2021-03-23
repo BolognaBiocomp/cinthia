@@ -27,6 +27,15 @@ USER cinthia
 
 COPY . .
 
+WORKDIR /seqdb/
+
+RUN apt-get update -y && \
+    apt-get install -y wget
+
+RUN wget https://share.biocomp.unibo.it/biocomp/sp2021_01/uniprot_sprot.fasta.gz && \
+    gunzip uniprot_sprot.fasta.gz && \
+    makeblastdb -in uniprot_sprot.fasta -dbtype prot
+
 WORKDIR /data/
 
 ENV CINTHIA_ROOT='/usr/src/cinthia' PATH=/usr/src/cinthia:$PATH

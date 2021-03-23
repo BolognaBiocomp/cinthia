@@ -2,6 +2,8 @@ import os
 
 CINTHIA_ROOT = os.environ['CINTHIA_ROOT']
 
+BLASTDB="/seqdb/uniprot_sprot.fasta"
+
 BIOCRF = os.path.join(CINTHIA_ROOT, 'tools', 'biocrf-static')
 
 

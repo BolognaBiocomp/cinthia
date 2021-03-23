@@ -30,7 +30,11 @@ def run_json(ns):
     #for record in SeqIO.parse(ns.fasta, 'fasta'):
     for i_json in input_json:
         acc = i_json['accession']
-        sequence = i_json['sequence']['sequence']
+        if not ns.mature:
+            sequence, cleavage = utils.cut_peptide(i_json)
+        else:
+            sequence = i_json['sequence']['sequence']
+            cleavage = 0
         prefix = "seq%d" % i
         fastaSeq  = we.createFile(prefix+".", ".fasta")
         #SeqIO.write([record], fastaSeq, 'fasta')
@@ -83,6 +87,8 @@ def run_json(ns):
                     topology = ""
             else:
                 topology = ""
+        if cleavage > 0:
+            topology = "P" * cleavage + topology
         acc_json = utils.get_json_output(i_json, topology, CRFprobs)
         protein_jsons.append(acc_json)
         i = i + 1
@@ -99,6 +105,7 @@ def main():
     parser.add_argument("-i", "--i-json", help = "The input JSON file name", dest = "i_json", required = True)
     parser.add_argument("-o", "--outf", help = "The output file", dest = "outf", required = True)
     parser.add_argument("-t", "--forcetopo", help = "Force topology to contain at least one TM segment", dest = "forcetopo", action="store_true")
+    parser.add_argument("-m", "--mature", help = "Sequences are mature. Do not try to cut SIGNAL or TRANSIT peptides before prediction", dest= "mature", action="store_true")
     ns = parser.parse_args()
     run_json(ns)
 

@@ -67,6 +67,17 @@ def get_data_cache(cache_dir):
             ret = datacache.DataCache(cache_dir)
     return ret
 
+def cut_peptide(i_json):
+    peptide = [f for f in i_json['features'] if f['type'] == "SIGNAL" or f['type'] == "TRANSIT"]
+    cleavage = 0
+    sequence = i_json['sequence']['sequence']
+    if len(peptide) > 0:
+        cleavage = peptide[0]['end']
+        sequence = i_json['sequence']['sequence'][cleavage:]
+    return sequence, cleavage
+
+
+
 def write_gff_output(acc, sequence, output_file, topology, scores):
     if topology != "":
         for mo in re.finditer("T+", topology):

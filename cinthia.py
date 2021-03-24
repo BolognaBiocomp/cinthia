@@ -89,6 +89,7 @@ def run_json(ns):
                 topology = ""
         if cleavage > 0:
             topology = "P" * cleavage + topology
+            CRFprobs = [0.0] * cleavage + CRFprobs
         acc_json = utils.get_json_output(i_json, topology, CRFprobs)
         protein_jsons.append(acc_json)
         i = i + 1

@@ -153,7 +153,7 @@ def main():
     ## Parsing input arguments
     DESC="Cinthia: Predictor of helical transmembrane topology"
     parser = argparse.ArgumentParser(description=DESC)
-    subparsers   = parser.add_subparsers(title = "subcommands", description = "valid subcommands", required = True)
+    subparsers   = parser.add_subparsers(title = "subcommands", description = "valid subcommands")
     multifasta  = subparsers.add_parser("multi-fasta", help = "Multi-FASTA input module", description = "DeepMito: Multi-FASTA input module.")
     pssm  = subparsers.add_parser("pssm", help = "PSSM input module (one sequence at a time)", description = "DeepMito: PSSM input module.")
     multifasta.add_argument("-f", "--fasta", help = "The input multi-FASTA file name", dest = "fasta", required = True)

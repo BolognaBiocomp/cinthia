@@ -154,8 +154,8 @@ def main():
     DESC="Cinthia: Predictor of helical transmembrane topology"
     parser = argparse.ArgumentParser(description=DESC)
     subparsers   = parser.add_subparsers(title = "subcommands", description = "valid subcommands")
-    multifasta  = subparsers.add_parser("multi-fasta", help = "Multi-FASTA input module", description = "DeepMito: Multi-FASTA input module.")
-    pssm  = subparsers.add_parser("pssm", help = "PSSM input module (one sequence at a time)", description = "DeepMito: PSSM input module.")
+    multifasta  = subparsers.add_parser("multi-fasta", help = "Multi-FASTA input module", description = "Cinthia: Multi-FASTA input module.")
+    pssm  = subparsers.add_parser("pssm", help = "PSSM input module (one sequence at a time)", description = "Cinthia: PSSM input module.")
     multifasta.add_argument("-f", "--fasta", help = "The input multi-FASTA file name", dest = "fasta", required = True)
     multifasta.add_argument("-d", "--dbfile", help = "The PSIBLAST DB file", dest = "dbfile", required= True)
     multifasta.add_argument("-o", "--outf", help = "The output file", dest = "outf", required = True)

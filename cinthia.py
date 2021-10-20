@@ -33,7 +33,7 @@ def run_multifasta(ns):
         fastaSeq  = we.createFile(prefix+".", ".fasta")
         SeqIO.write([record], fastaSeq, 'fasta')
         pssm = blast.runPsiBlast(prefix, ns.dbfile, fastaSeq, we, data_cache=data_cache,
-                                 num_alignments=ns.pdnalign, num_iterations=ns.pbniter, evalue=ns.pbeval)
+                                 num_alignments=ns.pbnalign, num_iterations=ns.pbniter, evalue=ns.pbeval)
         profile = bcp.BlastCheckPointProfile(pssm)
         profile = utils.rearrange_profile(profile, cfg.BLASTALPH, cfg.HSSPALPH)
         topology = ""

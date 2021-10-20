@@ -23,16 +23,17 @@ from Bio import SeqIO
 def run_multifasta(ns):
     we = workenv.TemporaryEnv()
     data_cache = utils.get_data_cache(ns.cache_dir)
-    i = 0
+    k = 0
     ofsout = open(ns.outf, 'w')
     protein_jsons = []
     for record in SeqIO.parse(ns.fasta, 'fasta'):
         acc = record.id
         sequence = str(record.seq)
-        prefix = "seq%d" % i
+        prefix = "seq%d" % k
         fastaSeq  = we.createFile(prefix+".", ".fasta")
         SeqIO.write([record], fastaSeq, 'fasta')
-        pssm = blast.runPsiBlast(prefix, ns.dbfile, fastaSeq, we, data_cache=data_cache)
+        pssm = blast.runPsiBlast(prefix, ns.dbfile, fastaSeq, we, data_cache=data_cache,
+                                 num_alignments=ns.pdnalign, num_iterations=ns.pbniter, evalue=ns.pbeval)
         profile = bcp.BlastCheckPointProfile(pssm)
         profile = utils.rearrange_profile(profile, cfg.BLASTALPH, cfg.HSSPALPH)
         topology = ""
@@ -83,7 +84,7 @@ def run_multifasta(ns):
             protein_jsons.append(acc_json)
         else:
             utils.write_gff_output(acc, sequence, ofsout, topology, CRFprobs)
-        i = i + 1
+        k = k + 1
     if ns.outfmt == "json":
         json.dump(protein_jsons, ofsout, indent=5)
     ofsout.close()
@@ -162,6 +163,9 @@ def main():
     multifasta.add_argument("-m", "--outfmt", help = "The output format: json or gff3 (default)", choices=['json', 'gff3'], required = False, default = "gff3")
     multifasta.add_argument("-t", "--forcetopo", help = "Force topology to contain at least one TM segment", dest = "forcetopo", action="store_true")
     multifasta.add_argument("-c", "--cache-dir", help="Cache dir for alignemnts", dest="cache_dir", required=False, default=None)
+    multifasta.add_argument("-j", "--psiblast-iter", help="Number of PSIBLAST iterations (default 3)", dest="pbniter", required=False, default=3, type=int)
+    multifasta.add_argument("-n", "--psiblast-nalign", help="PSIBLAST num_alignments parameter (default 5000)", dest="pbnalign", required=False, default=5000, type=int)
+    multifasta.add_argument("-e", "--psiblast-evalue", help="PSIBLAST evalue parameter (default 0.001)", dest="pbeval", required=False, default=0.001, type=float)
     multifasta.set_defaults(func=run_multifasta)
     pssm.add_argument("-f", "--fasta", help = "The input FASTA file name (one sequence)", dest = "fasta", required = True)
     pssm.add_argument("-p", "--pssm", help = "The PSIBLAST PSSM file", dest = "pssm", required= True)

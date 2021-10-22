@@ -21,12 +21,12 @@ import numpy
 from Bio import SeqIO
 
 def run_multifasta(ns):
-    we = workenv.TemporaryEnv()
     data_cache = utils.get_data_cache(ns.cache_dir)
     k = 0
     ofsout = open(ns.outf, 'w')
     protein_jsons = []
     for record in SeqIO.parse(ns.fasta, 'fasta'):
+        we = workenv.TemporaryEnv()
         acc = record.id
         sequence = str(record.seq)
         prefix = "seq%d" % k
@@ -78,6 +78,7 @@ def run_multifasta(ns):
                     topology = ""
             else:
                 topology = ""
+        we.destroy()
         if ns.outfmt == "json":
             acc_json = utils.get_json_output(acc, sequence, topology, CRFprobs)
             #json.dump([acc_json], ofsout, indent=5)
@@ -88,7 +89,6 @@ def run_multifasta(ns):
     if ns.outfmt == "json":
         json.dump(protein_jsons, ofsout, indent=5)
     ofsout.close()
-    we.destroy()
     sys.exit(0)
 
 def run_pssm(ns):

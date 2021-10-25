@@ -35,8 +35,12 @@ def run_multifasta(ns):
         pssm = blast.runPsiBlast(prefix, ns.dbfile, fastaSeq, we, data_cache=data_cache,
                                  num_alignments=ns.pbnalign, num_iterations=ns.pbniter, evalue=ns.pbeval,
                                  threads=ns.threads)
-        profile = bcp.BlastCheckPointProfile(pssm)
-        profile = utils.rearrange_profile(profile, cfg.BLASTALPH, cfg.HSSPALPH)
+        try:
+            profile = bcp.BlastCheckPointProfile(pssm)
+            profile = utils.rearrange_profile(profile, cfg.BLASTALPH, cfg.HSSPALPH)
+        except:
+            profile = utils.one_hot_encoding(sequence)
+
         topology = ""
 
         if ns.forcetopo:

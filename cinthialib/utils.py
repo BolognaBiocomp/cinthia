@@ -53,7 +53,7 @@ def check_sequence_pssm_match(sequence, psiblast_pssm):
   return True
 
 def one_hot_encoding(sequence, alph="VLIMFWYGAPSTCHRKQEND"):
-    profile = numpy.zeros((len(sequence), 20))
+    profile = np.zeros((len(sequence), 20))
     for (i, aa) in enumerate(sequence):
         try:
             j = alph.index(aa)

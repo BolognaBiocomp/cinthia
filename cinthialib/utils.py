@@ -70,7 +70,7 @@ def rearrange_profile(profile, in_alph, out_alph):
 
 def clip_profile(sequence, profile, alph="VLIMFWYGAPSTCHRKQEND"):
     for i in range(profile.shape[0]):
-        if np.sum(profile) == 0:
+        if np.sum(profile[i]) == 0:
             try:
                 j = alph.index(sequence[i])
             except:

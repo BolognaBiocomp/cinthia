@@ -38,6 +38,7 @@ def run_multifasta(ns):
         try:
             profile = bcp.BlastCheckPointProfile(pssm)
             profile = utils.rearrange_profile(profile, cfg.BLASTALPH, cfg.HSSPALPH)
+            profile = utils.clip_profile(sequence, profile)
         except:
             profile = utils.one_hot_encoding(sequence)
 

@@ -68,6 +68,16 @@ def rearrange_profile(profile, in_alph, out_alph):
         new_profile[:,i] = profile[:,in_alph.index(a)]
     return new_profile
 
+def clip_profile(sequence, profile, alph="VLIMFWYGAPSTCHRKQEND"):
+    for i in range(profile.shape[0]):
+        if np.sum(profile) == 0:
+            try:
+                j = alph.index(sequence[i])
+            except:
+                j = 8
+            profile[i,j]=1.0
+    return profile
+
 def get_data_cache(cache_dir):
     import os
     from . import datacache

@@ -29,18 +29,26 @@ def run_multifasta(ns):
         we = workenv.TemporaryEnv()
         acc = record.id
         sequence = str(record.seq)
+        seq_t=sequence.replace("U","C")
+        seq_t=seq_t.replace("Z","A")
+        seq_t=seq_t.replace("B","A")
+        seq_t=seq_t.replace("X","A")
         prefix = "seq%d" % k
         fastaSeq  = we.createFile(prefix+".", ".fasta")
-        SeqIO.write([record], fastaSeq, 'fasta')
+        #SeqIO.write([record], fastaSeq, 'fasta')
+        fsfp=open(fastaSeq, 'w')
+        print(">%s" % prefix, file=fsfp)
+        print(seq_t, file=fsfp)
+        fsfp.close()
         pssm = blast.runPsiBlast(prefix, ns.dbfile, fastaSeq, we, data_cache=data_cache,
                                  num_alignments=ns.pbnalign, num_iterations=ns.pbniter, evalue=ns.pbeval,
                                  threads=ns.threads)
         try:
             profile = bcp.BlastCheckPointProfile(pssm)
             profile = utils.rearrange_profile(profile, cfg.BLASTALPH, cfg.HSSPALPH)
-            profile = utils.clip_profile(sequence, profile)
+            profile = utils.clip_profile(seq_t, profile)
         except:
-            profile = utils.one_hot_encoding(sequence)
+            profile = utils.one_hot_encoding(seq_t)
 
         topology = ""
 

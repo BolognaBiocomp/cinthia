@@ -37,7 +37,7 @@ def run_multifasta(ns):
         fastaSeq  = we.createFile(prefix+".", ".fasta")
         #SeqIO.write([record], fastaSeq, 'fasta')
         fsfp=open(fastaSeq, 'w')
-        print(">%s" % prefix, file=fsfp)
+        print(">%s" % acc, file=fsfp)
         print(seq_t, file=fsfp)
         fsfp.close()
         pssm = blast.runPsiBlast(prefix, ns.dbfile, fastaSeq, we, data_cache=data_cache,

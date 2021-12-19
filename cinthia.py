@@ -25,6 +25,7 @@ def run_multifasta(ns):
     k = 0
     ofsout = open(ns.outf, 'w')
     protein_jsons = []
+    profiles = []
     for record in SeqIO.parse(ns.fasta, 'fasta'):
         we = workenv.TemporaryEnv()
         acc = record.id
@@ -49,7 +50,20 @@ def run_multifasta(ns):
             profile = utils.clip_profile(seq_t, profile)
         except:
             profile = utils.one_hot_encoding(seq_t)
-
+        profiles.append(profile)
+        k = k + 1
+        we.destroy()
+    we = workenv.TemporaryEnv()
+    crf_model = cfg.CRFMODEL
+    if ns.forcetopo:
+        crf_model = cfg.CRFFORCEDMODEL
+    CRFprediction, CRFprobs = cinthia.runCRF_multi(crf_model, profiles, we, num_threads = ns.threads)
+    we.destroy()
+    seq_idx = 0
+    for record in SeqIO.parse(ns.fasta, 'fasta'):
+        we = workenv.TemporaryEnv()
+        acc = record.id
+        sequence = str(record.seq)
         topology = ""
 
         if ns.forcetopo:
@@ -58,8 +72,9 @@ def run_multifasta(ns):
             cinthia_output_tmp_file = we.createFile("cinthia.", ".output.dat")
             ofs = open(cinthia_input_tmp_file, 'w')
             ofs.write("# M1 M2 M3 M4\n")
-            for i in range(len(CRFprediction)):
-                ofs.write("\t".join([CRFprediction[i], CRFprediction[i], CRFprediction[i], CRFprediction[i]]) + '\n')
+            for i in range(len(CRFprediction[seq_idx])):
+                ofs.write("\t".join([CRFprediction[seq_idx][i], CRFprediction[seq_idx][i],
+                                     CRFprediction[seq_idx][i], CRFprediction[seq_idx][i]]) + '\n')
             ofs.close()
             DP,names=cinthia.readPreds(cinthia_input_tmp_file)
             tsymb=cinthia.tmsymbols()
@@ -68,16 +83,14 @@ def run_multifasta(ns):
             cinthia.writeConsensus(tmseg,pLen,topSeg,topSum,mVote,tsymb,cinthia_output_tmp_file)
             topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()]).replace("l", "i").replace("L", "o")
         else:
-            CRFprediction, CRFprobs = cinthia.runCRF(cfg.CRFMODEL, profile, we)
-            HMMUprediction = cinthia.runHMM(cfg.HMMUMODEL, profile, we)
-            HMMWprediction = cinthia.runHMM(cfg.HMMWMODEL, profile, we)
-            if 'T' in CRFprediction and 'T' in HMMUprediction and 'T' in HMMWprediction:
+            if 'T' in CRFprediction[seq_idx]:
                 cinthia_input_tmp_file = we.createFile("cinthia.", ".input.dat")
                 cinthia_output_tmp_file = we.createFile("cinthia.", ".output.dat")
                 ofs = open(cinthia_input_tmp_file, 'w')
                 ofs.write("# M1 M2 M3 M4\n")
-                for i in range(len(CRFprediction)):
-                    ofs.write("\t".join([HMMUprediction[i], HMMWprediction[i], CRFprediction[i], CRFprediction[i]]) + '\n')
+                for i in range(len(CRFprediction[seq_idx])):
+                    ofs.write("\t".join([CRFprediction[seq_idx][i], CRFprediction[seq_idx][i]],
+                                         CRFprediction[seq_idx][i], CRFprediction[seq_idx][i]]) + '\n')
                 ofs.close()
                 DP,names=cinthia.readPreds(cinthia_input_tmp_file)
                 tsymb=cinthia.tmsymbols()
@@ -93,13 +106,14 @@ def run_multifasta(ns):
             else:
                 topology = ""
         we.destroy()
+        seq_idx = seq_idx + 1
         if ns.outfmt == "json":
             acc_json = utils.get_json_output(acc, sequence, topology, CRFprobs)
             #json.dump([acc_json], ofsout, indent=5)
             protein_jsons.append(acc_json)
         else:
             utils.write_gff_output(acc, sequence, ofsout, topology, CRFprobs)
-        k = k + 1
+
     if ns.outfmt == "json":
         json.dump(protein_jsons, ofsout, indent=5)
     ofsout.close()
@@ -132,15 +146,15 @@ def run_pssm(ns):
         topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()]).replace("l", "i").replace("L", "o")
     else:
         CRFprediction, CRFprobs = cinthia.runCRF(cfg.CRFMODEL, profile, we)
-        HMMUprediction = cinthia.runHMM(cfg.HMMUMODEL, profile, we)
-        HMMWprediction = cinthia.runHMM(cfg.HMMWMODEL, profile, we)
-        if 'T' in CRFprediction and 'T' in HMMUprediction and 'T' in HMMWprediction:
+        #HMMUprediction = cinthia.runHMM(cfg.HMMUMODEL, profile, we)
+        #HMMWprediction = cinthia.runHMM(cfg.HMMWMODEL, profile, we)
+        if 'T' in CRFprediction:
             cinthia_input_tmp_file = we.createFile("cinthia.", ".input.dat")
             cinthia_output_tmp_file = we.createFile("cinthia.", ".output.dat")
             ofs = open(cinthia_input_tmp_file, 'w')
             ofs.write("# M1 M2 M3 M4\n")
             for i in range(len(CRFprediction)):
-                ofs.write("\t".join([HMMUprediction[i], HMMWprediction[i], CRFprediction[i], CRFprediction[i]]) + '\n')
+                ofs.write("\t".join([CRFprediction[i], CRFprediction[i]], CRFprediction[i], CRFprediction[i]]) + '\n')
             ofs.close()
             DP,names=cinthia.readPreds(cinthia_input_tmp_file)
             tsymb=cinthia.tmsymbols()

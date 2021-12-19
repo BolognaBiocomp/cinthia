@@ -12,6 +12,42 @@ from .hmm import HMM_IO as HMM_IO
 from .hmm import algo_HMM as algo_HMM
 from . import config as cfg
 
+def runCRF_multi(model, profiles, we, num_threads = 1):
+  crfdat = we.createFile("crf.", ".dat")
+  cdofs=open(crfdat,'w')
+  for profile in profiles:
+      for i in range(profile.shape[0]):
+          for j in range(profile.shape[1]):
+              cdofs.write("%f " % profile[i][j])
+          cdofs.write("0.0 l\n")
+      cdofs.write("\n")
+  cdofs.close()
+  crfpred = we.createFile("crf.", ".pred")
+  crfplabel = we.createFile("crf.",".plabel")
+
+  subprocess.call([cfg.BIOCRF, '-test',
+                   '-m', model,
+                   '-o', crfpred,
+                   '-d', cfg.CRF_DECONDING,
+                   '-q', crfplabel,
+                   '-w', str(cfg.CRF_WINDOW),
+                   '-a', str(num_threads), crfdat],
+                   stdout=open('/dev/null', 'w'),
+                   stderr=open('/dev/null', 'w'))
+  probs = []
+  for i in range(len(profiles)):
+      probs.append([float(line.split()[1]) for line in open(crfplabel+"_%d" % i).readlines()])
+  prediction = []
+  p = []
+  for line in open(crfpred):
+      line = line.split()
+      if len(line) > 0:
+          p.append(line[1])
+      else:
+          p = "".join(p)
+          prediction.append(p)
+  return prediction, probs
+
 def runCRF(model, profile, we):
   crfdat = we.createFile("crf.", ".dat")
   cdofs=open(crfdat,'w')

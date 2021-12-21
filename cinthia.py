@@ -83,6 +83,7 @@ def run_multifasta(ns):
             topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()]).replace("l", "i").replace("L", "o")
         else:
             if 'T' in CRFprediction[seq_idx]:
+                """
                 cinthia_input_tmp_file = we.createFile("cinthia.", ".input.dat")
                 cinthia_output_tmp_file = we.createFile("cinthia.", ".output.dat")
                 ofs = open(cinthia_input_tmp_file, 'w')
@@ -102,6 +103,8 @@ def run_multifasta(ns):
                     topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()]).replace("l", "i").replace("L", "o")
                 else:
                     topology = ""
+                """
+                topology = "".join(CRFprediction[seq_idx])
             else:
                 topology = ""
         we.destroy()

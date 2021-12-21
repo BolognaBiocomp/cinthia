@@ -169,10 +169,10 @@ def run_pssm(ns):
         else:
             topology = ""
         if ns.outfmt == "json":
-            acc_json = utils.get_json_output(acc, sequence, topology, CRFprobs)
+            acc_json = utils.get_json_output(acc, sequence, topology, CRFprobs[seq_idx])
             json.dump([acc_json], ofsout, indent=5)
         else:
-            utils.write_gff_output(acc, sequence, ofsout, topology, CRFprobs)
+            utils.write_gff_output(acc, sequence, ofsout, topology, CRFprobs[seq_idx])
     ofsout.close()
     we.destroy()
     sys.exit(0)

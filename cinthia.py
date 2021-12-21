@@ -153,7 +153,7 @@ def run_pssm(ns):
             ofs = open(cinthia_input_tmp_file, 'w')
             ofs.write("# M1 M2 M3 M4\n")
             for i in range(len(CRFprediction)):
-                ofs.write("\t".join([CRFprediction[i], CRFprediction[i]], CRFprediction[i], CRFprediction[i]]) + '\n')
+                ofs.write("\t".join([CRFprediction[i], CRFprediction[i], CRFprediction[i], CRFprediction[i]]) + '\n')
             ofs.close()
             DP,names=cinthia.readPreds(cinthia_input_tmp_file)
             tsymb=cinthia.tmsymbols()

@@ -67,12 +67,11 @@ def run_multifasta(ns):
         topology = ""
 
         if ns.forcetopo:
-            CRFprediction, CRFprobs = cinthia.runCRF(cfg.CRFFORCEDMODEL, profile, we)
             cinthia_input_tmp_file = we.createFile("cinthia.", ".input.dat")
             cinthia_output_tmp_file = we.createFile("cinthia.", ".output.dat")
             ofs = open(cinthia_input_tmp_file, 'w')
             ofs.write("# M1 M2 M3 M4\n")
-            for i in range(len(CRFprediction[seq_idx])):
+            for i in range(len(CRFprediction)):
                 ofs.write("\t".join([CRFprediction[seq_idx][i], CRFprediction[seq_idx][i],
                                      CRFprediction[seq_idx][i], CRFprediction[seq_idx][i]]) + '\n')
             ofs.close()

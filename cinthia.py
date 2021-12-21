@@ -73,7 +73,7 @@ def run_multifasta(ns):
             ofs.write("# M1 M2 M3 M4\n")
             for i in range(len(CRFprediction)):
                 ofs.write("\t".join([CRFprediction[seq_idx][i], CRFprediction[seq_idx][i],
-                                     CRFprediction[seq_idx][i], CRFprediction[seq_idx][i]) + '\n')
+                                     CRFprediction[seq_idx][i], CRFprediction[seq_idx][i]]) + '\n')
             ofs.close()
             DP,names=cinthia.readPreds(cinthia_input_tmp_file)
             tsymb=cinthia.tmsymbols()
@@ -88,7 +88,7 @@ def run_multifasta(ns):
                 ofs = open(cinthia_input_tmp_file, 'w')
                 ofs.write("# M1 M2 M3 M4\n")
                 for i in range(len(CRFprediction[seq_idx])):
-                    ofs.write("\t".join([CRFprediction[seq_idx][i], CRFprediction[seq_idx][i]],
+                    ofs.write("\t".join([CRFprediction[seq_idx][i], CRFprediction[seq_idx][i],
                                          CRFprediction[seq_idx][i], CRFprediction[seq_idx][i]]) + '\n')
                 ofs.close()
                 DP,names=cinthia.readPreds(cinthia_input_tmp_file)

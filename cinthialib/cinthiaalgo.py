@@ -46,6 +46,7 @@ def runCRF_multi(model, profiles, we, num_threads = 1):
       else:
           p = "".join(p)
           prediction.append(p)
+          p = []
   return prediction, probs
 
 def runCRF(model, profile, we):

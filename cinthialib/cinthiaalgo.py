@@ -36,7 +36,7 @@ def runCRF_multi(model, profiles, we, num_threads = 1):
                    stderr=open('/dev/null', 'w'))
   probs = []
   for i in range(len(profiles)):
-      probs.append([float(line.split()[1]) for line in open(crfplabel+"_%d" % i).readlines()])
+      probs.append([float(line.split()[1]) for line in open(crfplabel+"_%d" % i)])
   prediction = []
   p = []
   for line in open(crfpred):

@@ -105,13 +105,14 @@ def run_multifasta(ns):
             else:
                 topology = ""
         we.destroy()
-        seq_idx = seq_idx + 1
+
         if ns.outfmt == "json":
             acc_json = utils.get_json_output(acc, sequence, topology, CRFprobs[seq_idx])
             #json.dump([acc_json], ofsout, indent=5)
             protein_jsons.append(acc_json)
         else:
             utils.write_gff_output(acc, sequence, ofsout, topology, CRFprobs[seq_idx])
+        seq_idx = seq_idx + 1
 
     if ns.outfmt == "json":
         json.dump(protein_jsons, ofsout, indent=5)

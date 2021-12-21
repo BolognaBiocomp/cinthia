@@ -93,7 +93,7 @@ def write_gff_output(acc, sequence, output_file, topology, scores):
             s = mo.start()
             e = mo.end()
             score = np.mean(scores[s:e])
-            print(acc, "CINTHIA/ENSEMBLE3.0", "Transmembrane", s+1, e, round(score,2), ".", ".", "Note=Helical;evidence=ECO:0000256")
+            print(acc, "CINTHIA/ENSEMBLE3.0", "Transmembrane", s+1, e, round(score,2), ".", ".", "Note=Helical;evidence=ECO:0000256", file=output_file)
 
 
 def get_json_output(acc, sequence, topology, scores):

@@ -58,6 +58,8 @@ def run_multifasta(ns):
     if ns.forcetopo:
         crf_model = cfg.CRFFORCEDMODEL
     CRFprediction, CRFprobs = cinthia.runCRF_multi(crf_model, profiles, we, num_threads = ns.threads)
+    HMMUprediction = cinthia.runHMM_multi(cfg.HMMUMODEL, profiles, we, num_threads = ns.threads)
+    HMMWprediction = cinthia.runHMM_multi(cfg.HMMWMODEL, profiles, we, num_threads = ns.threads)
     we.destroy()
     seq_idx = 0
     for record in SeqIO.parse(ns.fasta, 'fasta'):
@@ -82,13 +84,13 @@ def run_multifasta(ns):
             cinthia.writeConsensus(tmseg,pLen,topSeg,topSum,mVote,tsymb,cinthia_output_tmp_file)
             topology = "".join([x.strip() for x in open(cinthia_output_tmp_file).readlines()]).replace("l", "i").replace("L", "o")
         else:
-            if 'T' in CRFprediction[seq_idx]:
+            if 'T' in CRFprediction[seq_idx] and 'T' in HMMUprediction[seq_idx] and 'T' in HMMWprediction[seq_idx]:
                 cinthia_input_tmp_file = we.createFile("cinthia.", ".input.dat")
                 cinthia_output_tmp_file = we.createFile("cinthia.", ".output.dat")
                 ofs = open(cinthia_input_tmp_file, 'w')
                 ofs.write("# M1 M2 M3 M4\n")
                 for i in range(len(CRFprediction[seq_idx])):
-                    ofs.write("\t".join([CRFprediction[seq_idx][i], CRFprediction[seq_idx][i],
+                    ofs.write("\t".join([HMMUprediction[seq_idx][i], HMMWprediction[seq_idx][i],
                                          CRFprediction[seq_idx][i], CRFprediction[seq_idx][i]]) + '\n')
                 ofs.close()
                 DP,names=cinthia.readPreds(cinthia_input_tmp_file)

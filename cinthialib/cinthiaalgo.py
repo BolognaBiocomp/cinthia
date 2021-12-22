@@ -12,6 +12,8 @@ from .hmm import HMM_IO as HMM_IO
 from .hmm import algo_HMM as algo_HMM
 from . import config as cfg
 
+import multiprocessing
+
 def runCRF_multi(model, profiles, we, num_threads = 1):
   crfdat = we.createFile("crf.", ".dat")
   cdofs=open(crfdat,'w')
@@ -73,6 +75,39 @@ def runCRF(model, profile, we):
   prediction  = ''.join([x.split()[1] for x in open(crfpred).readlines()[:-1]])
   probs       = [float(line.split()[1]) for line in open(crfplabel+"_0").readlines()]
   return prediction, probs
+
+class HMMProcess(multiprocessing.Process):
+    def __init__(self, queue, outqueue, model, we):
+        multiprocessing.Process.__init__(self)
+        self.queue = queue
+        self.outqueue = outqueue
+        self.model = model
+        self.we = we
+    def run(self):
+        while True:
+            i, profile = self.queue.get()
+            topology = runHMM(self.model, profile, self.we)
+            self.outqueue.put((i, topology))
+
+def runHMM_multi(model, profiles, we, num_threads = 1):
+    queue = multiprocessing.Queue()
+    outqueue = multiprocessing.Queue()
+
+    for i in range(num_threads):
+        t = HMMProcess(queue, outqueue, model, we)
+        t.daemon = True
+        t.start()
+
+    for (i,p) in enumerate(profiles):
+        queue.put((i,p))
+
+    results = []
+    while len(results) < len(profiles):
+        res = outqueue.get()
+        results.append(res)
+
+    results.sort()
+    return [x[1] for x in results]
 
 def runHMM(model, profile, we):
   #profile = open(inpf).readlines()
